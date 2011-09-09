@@ -1,0 +1,74 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
+      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:Program.cs" caret="248" fromTop="11" />
+      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:GolfTracker.cs" caret="194" fromTop="9" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="122" fromTop="6" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature.cs" caret="896" fromTop="12" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature" caret="159" fromTop="5" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:StepDefinition1.cs" caret="340" fromTop="15" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:Program.cs" caret="248" fromTop="11" />
+      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:Program.cs" caret="304" fromTop="11" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="375" fromTop="20" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="374" fromTop="3" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="374" fromTop="8" />
+      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:GolfTracker.cs" caret="163" fromTop="6" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature" caret="159" fromTop="11" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature" caret="159" fromTop="4" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature" caret="24" fromTop="4" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature" caret="48" fromTop="2" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature.cs" caret="2927" fromTop="82" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:StepDefinition1.cs" caret="172" fromTop="2" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:StepDefinition1.cs" caret="440" fromTop="17" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="236" fromTop="13" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="0" fromTop="1" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="0" fromTop="0" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:StepDefinition1.cs" caret="340" fromTop="15" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Programme\NUnit 2.5.10\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Console`0" priority="0" />
+      <Item value="return" priority="0" />
+      <Item value="throw" priority="0" />
+      <Item value="new" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="True`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <UnitTestSessions>
+    <Session>
+      <Name>Session #1</Name>
+      <Elements>
+        <UnitTestElement Provider="nUnit" Id="AkzeptanzTests.BallSchlagenFeature" type="NUnitTestFixtureElement" Project="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E" />
+        <UnitTestElement Provider="nUnit" Id="UnitTests.GolfTrackerTest" type="NUnitTestFixtureElement" Project="F9EFCC2E-B02F-4114-973D-E5E0FE227D70" />
+        <UnitTestElement Provider="nUnit" Id="AkzeptanzTests.BallSchlagenFeature.BallEinmalSchlagen" ParentId="AkzeptanzTests.BallSchlagenFeature" type="NUnitTestElement" TypeName="AkzeptanzTests.BallSchlagenFeature" MethodName="BallEinmalSchlagen" Project="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E" />
+        <UnitTestElement Provider="nUnit" Id="UnitTests.GolfTrackerTest.ZaehltEinenSchlag" ParentId="UnitTests.GolfTrackerTest" type="NUnitTestElement" TypeName="UnitTests.GolfTrackerTest" MethodName="ZaehltEinenSchlag" Project="F9EFCC2E-B02F-4114-973D-E5E0FE227D70" />
+      </Elements>
+    </Session>
+  </UnitTestSessions>
+</Configuration>

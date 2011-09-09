@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Dokumente und Einstellungen\mschulz\Eigene Dateien\Visual Studio 2010\Projects\NerdGolfTracker\UnitTests\NerdGolfTracker.nunit" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-09-08" time="16:52:06">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.3615" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="C:\Dokumente und Einstellungen\mschulz\Eigene Dateien\Visual Studio 2010\Projects\NerdGolfTracker\UnitTests\bin\Debug" machine-name="MSCHULZXPNB" user="mschulz" user-domain="DOCEXPERT" />
+  <culture-info current-culture="de-DE" current-uiculture="de-DE" />
+  <test-suite type="Project" name="C:\Dokumente und Einstellungen\mschulz\Eigene Dateien\Visual Studio 2010\Projects\NerdGolfTracker\UnitTests\NerdGolfTracker.nunit" executed="True" result="Failure" success="False" time="0.078" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\Dokumente und Einstellungen\mschulz\Eigene Dateien\Visual Studio 2010\Projects\NerdGolfTracker\UnitTests\bin\Debug\UnitTests.dll" executed="True" result="Failure" success="False" time="0.063" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="UnitTests" executed="True" result="Failure" success="False" time="0.063" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="GolfTrackerTest" executed="True" result="Failure" success="False" time="0.063" asserts="0">
+                <results>
+                  <test-case name="UnitTests.GolfTrackerTest.ZaehltEinenSchlag" executed="True" result="Failure" success="False" time="0.016" asserts="1">
+                    <failure>
+                      <message><![CDATA[  Expected string length 21 but was 22. Strings differ at index 8.
+  Expected: "Du hast einen Schlag."
+  But was:  "Du hast keinen Schlag."
+  -------------------^
+]]></message>
+                      <stack-trace><![CDATA[at UnitTests.GolfTrackerTest.ZaehltEinenSchlag() in c:\dokumente und einstellungen\mschulz\eigene dateien\visual studio 2010\Projects\NerdGolfTracker\UnitTests\UnitTest1.cs:line 16
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
