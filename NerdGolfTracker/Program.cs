@@ -9,7 +9,8 @@ namespace NerdGolfTracker
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello .NET-World!");
+            string befehl = Console.ReadLine();
+            Console.WriteLine(new GolfTracker().ReagiereAuf(befehl));
         }
     }
 }
