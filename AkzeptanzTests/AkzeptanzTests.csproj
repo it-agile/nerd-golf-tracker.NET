@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SchlaegeZaehlenSteps.cs" />
     <Compile Include="TrackerDriverFixture.cs" />
     <Compile Include="TrackerDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
