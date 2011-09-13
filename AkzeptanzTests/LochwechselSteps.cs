@@ -23,10 +23,11 @@ namespace AkzeptanzTests
             _driver.EmpfangeAnweisung("Naechstes Loch");
         }
 
-        [Then(@"zählt er die Schläge auf dem 1\. Loch\.")]
-        public void PruefeLoch()
+        [Then(@"zählt er die Schläge auf dem (\d+)\. (.*)\.")]
+        public void PruefeLoch(int lochnummer, string lochnomen)
         {
-            Assert.That(_driver.GibtAntwort(), Contains.Substring("1. Loch"));
+            Assert.That(_driver.GibtAntwort(), Contains.Substring(
+                string.Format("{0}. {1}", lochnummer, lochnomen)));
         }
     }
 }
