@@ -36,5 +36,12 @@ namespace UnitTests
             _scorecard.SchliesseLochAb();
             Assert.That(_scorecard.AnzahlSchlaege, Is.EqualTo(0));
         }
+
+        [Test]
+        public void ErhoehtLochnummerBeiLochwechsel()
+        {
+            _scorecard.SchliesseLochAb();
+            Assert.That(_scorecard.Lochnummer, Is.EqualTo(2));
+        }
     }
 }

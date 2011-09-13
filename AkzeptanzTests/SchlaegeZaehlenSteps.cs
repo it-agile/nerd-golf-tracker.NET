@@ -13,7 +13,7 @@ namespace AkzeptanzTests
             _driver = driver;
         }
 
-        [Then(@"zählt der NerdGolfTracker (.*) (.*)\.")]
+        [Then(@"zählt der NerdGolfTracker (\d+) (.*)\.")]
         public void PruefeSchlagzahl(int schlagzahl, string schlagnomen)
         {
             Assert.That(_driver.GibtAntwort(), Contains.Substring(

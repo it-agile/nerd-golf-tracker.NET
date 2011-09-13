@@ -84,15 +84,15 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Loch hochzaehlen")]
-        [NUnit.Framework.IgnoreAttribute()]
         public virtual void LochHochzaehlen()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Loch hochzaehlen", new string[] {
-                        "Ignore"});
-#line 10
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Loch hochzaehlen", ((string[])(null)));
+#line 9
 this.ScenarioSetup(scenarioInfo);
-#line 11
+#line 10
  testRunner.When("ich zum nächsten Loch gehe,");
+#line 11
+ testRunner.And("ich nun den Ball schlage,");
 #line 12
  testRunner.Then("zählt der NerdGolfTracker die Schläge auf dem 2. Loch.");
 #line hidden

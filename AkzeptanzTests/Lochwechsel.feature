@@ -6,7 +6,7 @@ Scenario: Schlagzahl zuruecksetzen
 	And ich nun den Ball schlage,
 	Then zählt der NerdGolfTracker 1 Schlag.
 
-@Ignore
 Scenario: Loch hochzaehlen
 	When ich zum nächsten Loch gehe,
+	And ich nun den Ball schlage,
 	Then zählt der NerdGolfTracker die Schläge auf dem 2. Loch.
