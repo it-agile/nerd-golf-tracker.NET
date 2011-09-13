@@ -1,6 +1,6 @@
 namespace NerdGolfTracker
 {
-    public class Lochwechsel
+    public class Lochwechsel : Operation
     {
         public void FuehreAus(Scorecard scorecard)
         {

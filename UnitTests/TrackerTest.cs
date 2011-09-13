@@ -9,7 +9,7 @@ namespace UnitTests
         [Test]
         public void ZaehltEinenSchlag()
         {
-            var tracker = new Tracker();
+            var tracker = new Tracker(new EinfacherInterpreter());
             Assert.That(tracker.ReagiereAuf("schlage Ball"), Is.EqualTo("Du hast 1 Schlag."));
         }
     }

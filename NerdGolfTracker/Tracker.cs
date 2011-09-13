@@ -3,15 +3,16 @@
     public class Tracker
     {
         private Scorecard _scorecard = new EinfacheScorecard();
+        private Interpreter _interpreter;
+
+        public Tracker(Interpreter interpreter)
+        {
+            _interpreter = interpreter;
+        }
 
         public string ReagiereAuf(string kommando)
         {
-            new Schlag().FuehreAus(_scorecard);
-
-            if (kommando == "Naechstes Loch")
-            {
-                new Lochwechsel().FuehreAus(_scorecard);
-            }
+            _interpreter.OperationFuer(kommando).FuehreAus(_scorecard);
 
             var schlag = _scorecard.AnzahlSchlaege == 1 ? "Schlag" : "Schlaege";
             return string.Format("Du hast {0} {1}.", _scorecard.AnzahlSchlaege, schlag);

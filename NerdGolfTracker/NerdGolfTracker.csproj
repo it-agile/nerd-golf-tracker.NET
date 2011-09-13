@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EinfacherInterpreter.cs" />
     <Compile Include="EinfacheScorecard.cs" />
+    <Compile Include="Interpreter.cs" />
     <Compile Include="Lochwechsel.cs" />
+    <Compile Include="Operation.cs" />
     <Compile Include="Schlag.cs" />
     <Compile Include="Tracker.cs" />
     <Compile Include="Program.cs" />
