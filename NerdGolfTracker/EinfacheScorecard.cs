@@ -4,6 +4,11 @@ namespace NerdGolfTracker
     {
         public int AnzahlSchlaege { get; private set; }
 
+        public int Lochnummer
+        {
+            get { return 1; }
+        }
+
         public void SchliesseLochAb()
         {
             AnzahlSchlaege = 0;
