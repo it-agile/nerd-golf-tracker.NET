@@ -24,11 +24,6 @@ namespace AkzeptanzTests
             _tracker.Kill();
         }
 
-        internal void SchlageBall()
-        {
-            EmpfangeAnweisung("Schlage Ball");
-        }
-
         public string GibtAntwort()
         {
             return _antwort;
