@@ -5,10 +5,10 @@ Szenario: Schlaege zaehlen
 	Dann zählt der NerdGolfTracker 1 Schlag.
 
 	Wenn ich den Ball noch einmal schlage,
-	Dann zählt der NerdGolfTracker 2 Schlaege.
+	Dann zählt er 2 Schlaege.
 
 	Wenn ich den Ball noch einmal schlage,
-	Dann zählt der NerdGolfTracker 3 Schlaege.
+	Dann zählt er 3 Schlaege.
 
 Szenario: Loch anzeigen
 	Wenn ich den Ball einmal schlage,	 

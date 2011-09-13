@@ -77,11 +77,11 @@ this.ScenarioSetup(scenarioInfo);
 #line 7
  testRunner.When("ich den Ball noch einmal schlage,");
 #line 8
- testRunner.Then("zählt der NerdGolfTracker 2 Schlaege.");
+ testRunner.Then("zählt er 2 Schlaege.");
 #line 10
  testRunner.When("ich den Ball noch einmal schlage,");
 #line 11
- testRunner.Then("zählt der NerdGolfTracker 3 Schlaege.");
+ testRunner.Then("zählt er 3 Schlaege.");
 #line hidden
             this.ScenarioCleanup();
         }

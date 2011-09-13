@@ -75,7 +75,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 5
  testRunner.When("ich zum nächsten Loch gehe,");
 #line 6
- testRunner.And("ich nun den Ball schlage,");
+ testRunner.And("nun den Ball schlage,");
 #line 7
  testRunner.Then("zählt der NerdGolfTracker 1 Schlag.");
 #line hidden
@@ -92,7 +92,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 10
  testRunner.When("ich zum nächsten Loch gehe,");
 #line 11
- testRunner.And("ich nun den Ball schlage,");
+ testRunner.And("nun den Ball schlage,");
 #line 12
  testRunner.Then("zählt der NerdGolfTracker die Schläge auf dem 2. Loch.");
 #line hidden
