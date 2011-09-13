@@ -18,7 +18,7 @@ namespace UnitTests
         public void InkrementiertSchlagzahlEinmal()
         {
             _scorecard.ErhoeheAnzahlSchlaege();
-            Assert.That(_scorecard.AnzahlSchlaege(), Is.EqualTo(1));
+            Assert.That(_scorecard.AnzahlSchlaege, Is.EqualTo(1));
         }
 
         [Test]
@@ -26,7 +26,7 @@ namespace UnitTests
         {
             _scorecard.ErhoeheAnzahlSchlaege();
             _scorecard.ErhoeheAnzahlSchlaege();
-            Assert.That(_scorecard.AnzahlSchlaege(), Is.EqualTo(2));
+            Assert.That(_scorecard.AnzahlSchlaege, Is.EqualTo(2));
         }
     }
 }
