@@ -2,10 +2,16 @@
 {
     public class Tracker
     {
-        private readonly Scorecard _scorecard = new EinfacheScorecard();
+        private Scorecard _scorecard = new EinfacheScorecard();
 
         public string ReagiereAuf(string kommando)
         {
+            if (kommando == "Naechstes Loch")
+            {
+                _scorecard = new EinfacheScorecard();
+                return "";
+            }
+
             new Schlag().FuehreAus(_scorecard);
 
             var schlag = _scorecard.AnzahlSchlaege == 1 ? "Schlag" : "Schlaege";

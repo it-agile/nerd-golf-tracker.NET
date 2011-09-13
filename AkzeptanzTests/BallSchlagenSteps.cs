@@ -12,8 +12,14 @@ namespace AkzeptanzTests
             _driver = driver;
         }
 
-        [When(@"ich den Ball.* einmal schlage,")]
-        public void BallSchlagen()
+        [When(@".* Ball.* schlage.*")]
+        public void SchlageBall()
+        {
+            _driver.SchlageBall();
+        }
+
+        [Given(@".* Ball.* einmal geschlagen.*")]
+        public void SchlageBall2()
         {
             _driver.SchlageBall();
         }

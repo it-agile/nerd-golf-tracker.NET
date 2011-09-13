@@ -24,7 +24,7 @@ namespace AkzeptanzTests
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "ball_schlagen.feature"
+#line 1 "Ball schlagen.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]

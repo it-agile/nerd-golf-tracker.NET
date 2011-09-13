@@ -5,6 +5,7 @@ namespace AkzeptanzTests
     public class TrackerDriver
     {
         private Process _tracker;
+        private string _antwort;
 
         public void Starte()
         {
@@ -25,13 +26,18 @@ namespace AkzeptanzTests
 
         internal void SchlageBall()
         {
-            _tracker.StandardInput.WriteLine("Schlage Ball");
+            EmpfangeAnweisung("Schlage Ball");
         }
 
         public string GibtAntwort()
         {
-            string antwort = _tracker.StandardOutput.ReadLine();
-            return antwort;
+            return _antwort;
+        }
+
+        public void EmpfangeAnweisung(string anweisung)
+        {
+            _tracker.StandardInput.WriteLine(anweisung);
+            _antwort = _tracker.StandardOutput.ReadLine();
         }
     }
 }
