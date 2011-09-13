@@ -9,31 +9,47 @@
   <RecentFiles>
     <RecentFiles>
       <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
-      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:Program.cs" caret="248" fromTop="11" />
-      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:GolfTracker.cs" caret="194" fromTop="9" />
-      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="122" fromTop="6" />
-      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature.cs" caret="896" fromTop="12" />
-      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature" caret="159" fromTop="5" />
-      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:StepDefinition1.cs" caret="340" fromTop="15" />
+      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:Program.cs" caret="259" fromTop="13" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:ball_schlagen.feature.cs" caret="2496" fromTop="22" />
+      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:GolfTracker.cs" caret="159" fromTop="6" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:ball_schlagen.feature" caret="311" fromTop="10" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:GolfTrackerDriver.cs" caret="154" fromTop="6" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:BallSchlagenSteps.cs" caret="600" fromTop="23" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="189" fromTop="9" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:EventDefinition1.cs" caret="504" fromTop="14" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:EinfacheScorecardTest.cs" caret="943" fromTop="24" />
     </RecentFiles>
     <RecentEdits>
-      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:Program.cs" caret="248" fromTop="11" />
-      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:Program.cs" caret="304" fromTop="11" />
-      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="375" fromTop="20" />
-      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="374" fromTop="3" />
-      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="374" fromTop="8" />
-      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:GolfTracker.cs" caret="163" fromTop="6" />
-      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature" caret="159" fromTop="11" />
-      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature" caret="159" fromTop="4" />
-      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature" caret="24" fromTop="4" />
-      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature" caret="48" fromTop="2" />
-      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:SpecFlowFeature1.feature.cs" caret="2927" fromTop="82" />
-      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:StepDefinition1.cs" caret="172" fromTop="2" />
-      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:StepDefinition1.cs" caret="440" fromTop="17" />
-      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="236" fromTop="13" />
-      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="0" fromTop="1" />
-      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="0" fromTop="0" />
-      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:StepDefinition1.cs" caret="340" fromTop="15" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:GolfTrackerDriver.cs" caret="265" fromTop="10" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:GolfTrackerDriver.cs" caret="265" fromTop="10" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:GolfTrackerDriver.cs" caret="820" fromTop="18" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:ball_schlagen.feature" caret="311" fromTop="13" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:ball_schlagen.feature" caret="58" fromTop="3" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:BallSchlagenSteps.cs" caret="427" fromTop="17" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:BallSchlagenSteps.cs" caret="947" fromTop="36" />
+      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:GolfTracker.cs" caret="159" fromTop="6" />
+      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:Program.cs" caret="364" fromTop="14" />
+      <File id="A0B8522A-44BD-481B-9A95-155ADB2751B2/f:Program.cs" caret="260" fromTop="13" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:BallSchlagenSteps.cs" caret="889" fromTop="33" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:BallSchlagenSteps.cs" caret="947" fromTop="28" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:BallSchlagenSteps.cs" caret="481" fromTop="18" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:ball_schlagen.feature" caret="311" fromTop="10" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:GolfTrackerDriver.cs" caret="120" fromTop="6" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:EventDefinition1.cs" caret="371" fromTop="8" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:EventDefinition1.cs" caret="504" fromTop="14" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:GolfTrackerDriver.cs" caret="1182" fromTop="36" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:GolfTrackerDriver.cs" caret="1071" fromTop="30" />
+      <File id="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E/f:BallSchlagenSteps.cs" caret="341" fromTop="14" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:GolfTrackerTest.cs" caret="189" fromTop="9" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:EinfacheScorecardTest.cs" caret="0" fromTop="0" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:EinfacheScorecardTest.cs" caret="506" fromTop="12" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:EinfacheScorecardTest.cs" caret="508" fromTop="12" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:EinfacheScorecardTest.cs" caret="478" fromTop="13" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:EinfacheScorecardTest.cs" caret="272" fromTop="12" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:EinfacheScorecardTest.cs" caret="974" fromTop="36" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:EinfacheScorecardTest.cs" caret="1260" fromTop="34" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:EinfacheScorecardTest.cs" caret="1065" fromTop="31" />
+      <File id="F9EFCC2E-B02F-4114-973D-E5E0FE227D70/f:EinfacheScorecardTest.cs" caret="1147" fromTop="35" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -54,20 +70,78 @@
       <Item value="new" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
-      <Item value="WriteLine`0" priority="0" />
+      <Item value="WriteLine`0" priority="54" />
+      <Item value="ReadLine`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
       <Item value="True`0" priority="0" />
+      <Item value="That`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="assertThat`0" priority="31" />
+      <Item value="antwort" priority="32" />
+      <Item value="Is`0" priority="63" />
+      <Item value="new" priority="287" />
+      <Item value="GolfTracker" priority="28" />
+      <Item value="Console`0" priority="127" />
+      <Item value="readLine" priority="31" />
+      <Item value="private" priority="31" />
+      <Item value="readonly" priority="31" />
+      <Item value="GolfTracker`0" priority="63" />
+      <Item value="_driver" priority="64" />
+      <Item value="GolfTrackerDriver" priority="86" />
+      <Item value="GolfTrackerDriver`0" priority="127" />
+      <Item value="tracker" priority="31" />
+      <Item value="Process`0" priority="31" />
+      <Item value="_tracker" priority="127" />
+      <Item value="return" priority="63" />
+      <Item value="RedirectStandardInput" priority="32" />
+      <Item value="CreateNoWindow" priority="32" />
+      <Item value="true" priority="32" />
+      <Item value="erwarteteAntwort" priority="31" />
+      <Item value="while" priority="31" />
+      <Item value="do" priority="31" />
+      <Item value="string" priority="31" />
+      <Item value="schlagnomen" priority="31" />
+      <Item value="InstanceData`0" priority="31" />
+      <Item value="SetUp" priority="31" />
+      <Item value="public" priority="31" />
+      <Item value="void" priority="31" />
+      <Item value="scorecard" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Is">
+      <Item value="EqualTo`0" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NerdGolfTracker.GolfTracker">
+      <Item value="ReagiereAuf`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Process">
+      <Item value="Start`0" priority="26" />
+      <Item value="GetProcessesByName`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Diagnostics.Process">
+      <Item value="StandardInput" priority="26" />
+      <Item value="StandardOutput" priority="26" />
+      <Item value="WaitForExit`0" priority="26" />
+      <Item value="Kill`0" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamWriter">
+      <Item value="WriteLine`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamReader">
+      <Item value="ReadLine`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@AkzeptanzTests.GolfTrackerDriver">
+      <Item value="instance" priority="54" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <UnitTestSessions>
     <Session>
-      <Name>Session #1</Name>
+      <Name>Session #3</Name>
       <Elements>
-        <UnitTestElement Provider="nUnit" Id="AkzeptanzTests.BallSchlagenFeature" type="NUnitTestFixtureElement" Project="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E" />
         <UnitTestElement Provider="nUnit" Id="UnitTests.GolfTrackerTest" type="NUnitTestFixtureElement" Project="F9EFCC2E-B02F-4114-973D-E5E0FE227D70" />
-        <UnitTestElement Provider="nUnit" Id="AkzeptanzTests.BallSchlagenFeature.BallEinmalSchlagen" ParentId="AkzeptanzTests.BallSchlagenFeature" type="NUnitTestElement" TypeName="AkzeptanzTests.BallSchlagenFeature" MethodName="BallEinmalSchlagen" Project="13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E" />
         <UnitTestElement Provider="nUnit" Id="UnitTests.GolfTrackerTest.ZaehltEinenSchlag" ParentId="UnitTests.GolfTrackerTest" type="NUnitTestElement" TypeName="UnitTests.GolfTrackerTest" MethodName="ZaehltEinenSchlag" Project="F9EFCC2E-B02F-4114-973D-E5E0FE227D70" />
+        <UnitTestElement Provider="MSTest" Id="UnitTests.EinfacheScorecardTest" type="MsTestTestClassElement" TypeName="UnitTests.EinfacheScorecardTest" Project="F9EFCC2E-B02F-4114-973D-E5E0FE227D70" />
       </Elements>
     </Session>
   </UnitTestSessions>

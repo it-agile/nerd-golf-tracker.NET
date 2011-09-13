@@ -6,18 +6,27 @@ namespace AkzeptanzTests
     [Binding]
     public class BallSchlagenSteps
     {
-        private readonly GolfTrackerDriver _driver = new GolfTrackerDriver();
-
         [When(@"ich den Ball einmal schlage,")]
         public void WhenIchDenBallEinmalSchlage()
         {
-            _driver.SchlageBall();
+            Driver.SchlageBall();
         }
 
-        [Then(@"antwortet mir der NerdGolfTracker ""(.*)""")]
-        public void ThenAntwortetMirDerNerdGolfTrackerDuHastEinenSchlag(string erwarteteAntwort)
+        private static TrackerDriver Driver
         {
-            Assert.That(_driver.GibtAntwort(), Is.EqualTo(erwarteteAntwort));
+            get { return TrackerDriver.instance; }
+        }
+
+        [When(@"ich den Ball noch einmal schlage,")]
+        public void WhenIchDenBallNochEinmalSchlage()
+        {
+            WhenIchDenBallEinmalSchlage();
+        }
+
+        [Then(@"zählt der NerdGolfTracker (.*) (.*)\.")]
+        public void ThenAntwortetMirDerNerdGolfTrackerDuHastEinenSchlag2(string schlagzahl, string schlagnomen)
+        {
+            Assert.That(TrackerDriver.instance.GibtAntwort(), Is.EqualTo(string.Format("Du hast {0} {1}.", schlagzahl, schlagnomen)));
         }
     }
 }

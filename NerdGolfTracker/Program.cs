@@ -9,8 +9,12 @@ namespace NerdGolfTracker
     {
         static void Main(string[] args)
         {
-            string befehl = Console.ReadLine();
-            Console.WriteLine(new GolfTracker().ReagiereAuf(befehl));
+            var tracker = new Tracker();
+            while (true)
+            {
+                var befehl = Console.ReadLine();
+                Console.WriteLine(tracker.ReagiereAuf(befehl));                
+            }
         }
     }
 }

@@ -2,11 +2,13 @@ using System.Diagnostics;
 
 namespace AkzeptanzTests
 {
-    internal class GolfTrackerDriver
+    internal class TrackerDriver
     {
+        internal static TrackerDriver instance;
+
         private readonly Process _tracker;
 
-        internal GolfTrackerDriver()
+        internal TrackerDriver()
         {
             _tracker = Process.Start(new ProcessStartInfo
                                          {
@@ -14,6 +16,7 @@ namespace AkzeptanzTests
                                              UseShellExecute = false,
                                              RedirectStandardOutput = true,
                                              RedirectStandardInput = true,
+                                             CreateNoWindow = true,                                             
                                          });
         }
 
@@ -24,7 +27,13 @@ namespace AkzeptanzTests
 
         public string GibtAntwort()
         {
-            return _tracker.StandardOutput.ReadLine();
+            string antwort = _tracker.StandardOutput.ReadLine();
+            return antwort;
+        }
+
+        public void Beende()
+        {
+            _tracker.Kill();
         }
     }
 }
