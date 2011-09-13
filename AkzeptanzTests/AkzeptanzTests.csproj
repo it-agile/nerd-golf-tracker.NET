@@ -69,6 +69,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="Ball schlagen.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Ball schlagen.feature.cs</LastGenOutput>

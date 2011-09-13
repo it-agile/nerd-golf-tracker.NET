@@ -1,12 +1,12 @@
-﻿Feature: Lochwechsel
+﻿Funktionalität: Lochwechsel
 
-Scenario: Schlagzahl zuruecksetzen
-	Given ich habe den Ball einmal geschlagen,
-	When ich zum nächsten Loch gehe,
-	And ich nun den Ball schlage,
-	Then zählt der NerdGolfTracker 1 Schlag.
+Szenario: Schlagzahl zuruecksetzen
+	Angenommen ich habe den Ball einmal geschlagen,
+	Wenn ich zum nächsten Loch gehe,
+	Und ich nun den Ball schlage,
+	Dann zählt der NerdGolfTracker 1 Schlag.
 
-Scenario: Loch hochzaehlen
-	When ich zum nächsten Loch gehe,
-	And ich nun den Ball schlage,
-	Then zählt der NerdGolfTracker die Schläge auf dem 2. Loch.
+Szenario: Loch hochzaehlen
+	Wenn ich zum nächsten Loch gehe,
+	Und ich nun den Ball schlage,
+	Dann zählt der NerdGolfTracker die Schläge auf dem 2. Loch.
