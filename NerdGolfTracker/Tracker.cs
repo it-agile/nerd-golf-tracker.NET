@@ -6,13 +6,12 @@
 
         public string ReagiereAuf(string kommando)
         {
+            new Schlag().FuehreAus(_scorecard);
+
             if (kommando == "Naechstes Loch")
             {
-                _scorecard = new EinfacheScorecard();
-                return "";
+                new Lochwechsel().FuehreAus(_scorecard);
             }
-
-            new Schlag().FuehreAus(_scorecard);
 
             var schlag = _scorecard.AnzahlSchlaege == 1 ? "Schlag" : "Schlaege";
             return string.Format("Du hast {0} {1}.", _scorecard.AnzahlSchlaege, schlag);

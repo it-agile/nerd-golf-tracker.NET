@@ -28,5 +28,13 @@ namespace UnitTests
             _scorecard.ErhoeheAnzahlSchlaege();
             Assert.That(_scorecard.AnzahlSchlaege, Is.EqualTo(2));
         }
+
+        [Test]
+        public void SetztSchlagzahlBeiLochwechselZurueck()
+        {
+            _scorecard.ErhoeheAnzahlSchlaege();
+            _scorecard.SchliesseLochAb();
+            Assert.That(_scorecard.AnzahlSchlaege, Is.EqualTo(0));
+        }
     }
 }

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EinfacheScorecard.cs" />
+    <Compile Include="Lochwechsel.cs" />
     <Compile Include="Schlag.cs" />
     <Compile Include="Tracker.cs" />
     <Compile Include="Program.cs" />
