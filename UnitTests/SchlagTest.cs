@@ -18,5 +18,15 @@ namespace UnitTests
             new Schlag().FuehreAus(scorecardMock.Object);
             scorecardMock.Verify(scorecard => scorecard.ErhoeheAnzahlSchlaege());
         }
+
+        [Test]
+        public void GibtDieAktuelleSchlagzahlZurueck()
+        {
+            var scorecardStub = new Mock<Scorecard>();
+            scorecardStub.Setup(scorecard => scorecard.AnzahlSchlaege).Returns(2);
+            var ausgabe = new Schlag().FuehreAus(scorecardStub.Object);
+            Assert.That(ausgabe, Contains.Substring("2 Schlaege"));
+        }
+        
     }
 }

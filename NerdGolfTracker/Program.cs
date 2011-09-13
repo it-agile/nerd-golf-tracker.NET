@@ -9,7 +9,7 @@ namespace NerdGolfTracker
     {
         static void Main(string[] args)
         {
-            var tracker = new Tracker(new EinfacherInterpreter());
+            var tracker = new Tracker(new EinfacherInterpreter(), new EinfacheScorecard());
             while (true)
             {
                 var befehl = Console.ReadLine();

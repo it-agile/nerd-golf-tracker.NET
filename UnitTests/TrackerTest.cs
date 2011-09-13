@@ -1,4 +1,5 @@
-﻿using NerdGolfTracker;
+﻿using Moq;
+using NerdGolfTracker;
 using NUnit.Framework;
 
 namespace UnitTests
@@ -7,10 +8,16 @@ namespace UnitTests
     public class TrackerTest
     {
         [Test]
-        public void ZaehltEinenSchlag()
+        public void GibtErgebnisDerAusgeloestenOperationZurueck()
         {
-            var tracker = new Tracker(new EinfacherInterpreter());
-            Assert.That(tracker.ReagiereAuf("schlage Ball"), Is.EqualTo("Du hast 1 Schlag."));
+            var interpreterStub = new Mock<Interpreter>();
+            var operationStub = new Mock<Operation>();
+            interpreterStub.Setup(interpreter => interpreter.OperationFuer("Eingabe"))
+                .Returns(operationStub.Object);
+            operationStub.Setup(operation => operation.FuehreAus(It.IsAny<Scorecard>()))
+                .Returns("Ausgabe");
+            var tracker = new Tracker(interpreterStub.Object, new EinfacheScorecard());
+            Assert.That(tracker.ReagiereAuf("Eingabe"), Is.EqualTo("Ausgabe"));
         }
     }
 }
