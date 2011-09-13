@@ -64,10 +64,10 @@ namespace AkzeptanzTests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Ball einmal schlagen")]
-        public virtual void BallEinmalSchlagen()
+        [NUnit.Framework.DescriptionAttribute("Schlaege zaehlen")]
+        public virtual void SchlaegeZaehlen()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ball einmal schlagen", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schlaege zaehlen", ((string[])(null)));
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line 4
@@ -82,6 +82,21 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.When("ich den Ball noch einmal schlage,");
 #line 11
  testRunner.Then("zählt der NerdGolfTracker 3 Schlaege.");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Loch anzeigen")]
+        public virtual void LochAnzeigen()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Loch anzeigen", ((string[])(null)));
+#line 13
+this.ScenarioSetup(scenarioInfo);
+#line 14
+ testRunner.When("ich den Ball einmal schlage,");
+#line 15
+ testRunner.Then("zählt er die Schläge auf dem 1. Loch.");
 #line hidden
             this.ScenarioCleanup();
         }

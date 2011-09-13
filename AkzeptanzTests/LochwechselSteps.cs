@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
 
 namespace AkzeptanzTests
@@ -22,5 +23,10 @@ namespace AkzeptanzTests
             _driver.EmpfangeAnweisung("Naechstes Loch");
         }
 
+        [Then(@"zählt er die Schläge auf dem 1\. Loch\.")]
+        public void PruefeLoch()
+        {
+            Assert.That(_driver.GibtAntwort(), Contains.Substring("1. Loch"));
+        }
     }
 }

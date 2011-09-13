@@ -16,7 +16,8 @@ namespace AkzeptanzTests
         [Then(@"zählt der NerdGolfTracker (.*) (.*)\.")]
         public void PruefeSchlagzahl(int schlagzahl, string schlagnomen)
         {
-            Assert.That(_driver.GibtAntwort(), Is.EqualTo(string.Format("Du hast {0} {1}.", schlagzahl, schlagnomen)));
+            Assert.That(_driver.GibtAntwort(), Contains.Substring(
+                string.Format("{0} {1}", schlagzahl, schlagnomen)));
         }
     }
 }

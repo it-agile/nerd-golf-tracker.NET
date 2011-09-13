@@ -64,10 +64,10 @@ namespace AkzeptanzTests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Schlagzahl zurücksetzen")]
-        public virtual void SchlagzahlZurucksetzen()
+        [NUnit.Framework.DescriptionAttribute("Schlagzahl zuruecksetzen")]
+        public virtual void SchlagzahlZuruecksetzen()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schlagzahl zurücksetzen", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schlagzahl zuruecksetzen", ((string[])(null)));
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line 4
@@ -78,6 +78,23 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.And("ich nun den Ball schlage,");
 #line 7
  testRunner.Then("zählt der NerdGolfTracker 1 Schlag.");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Loch hochzaehlen")]
+        [NUnit.Framework.IgnoreAttribute()]
+        public virtual void LochHochzaehlen()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Loch hochzaehlen", new string[] {
+                        "Ignore"});
+#line 10
+this.ScenarioSetup(scenarioInfo);
+#line 11
+ testRunner.When("ich zum nächsten Loch gehe,");
+#line 12
+ testRunner.Then("zählt der NerdGolfTracker die Schläge auf dem 2. Loch.");
 #line hidden
             this.ScenarioCleanup();
         }
