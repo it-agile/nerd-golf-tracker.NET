@@ -1,4 +1,6 @@
 using System.Diagnostics;
+using NUnit.Framework.Constraints;
+using NUnit.Framework;
 
 namespace AkzeptanzTests
 {
@@ -24,15 +26,15 @@ namespace AkzeptanzTests
             _tracker.Kill();
         }
 
-        public string GibtAntwort()
-        {
-            return _antwort;
-        }
-
         public void EmpfangeAnweisung(string anweisung)
         {
             _tracker.StandardInput.WriteLine(anweisung);
             _antwort = _tracker.StandardOutput.ReadLine();
+        }
+
+        public void AssertThatAntwortContains(string format, params object[] objects)
+        {
+            Assert.That(_antwort, Contains.Substring(string.Format(format, objects)));
         }
     }
 }

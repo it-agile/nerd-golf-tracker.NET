@@ -22,8 +22,7 @@ namespace AkzeptanzTests
         [Then(@"zählt.* auf dem (\d+)\. (.*)\.")]
         public void PruefeLoch(int lochnummer, string lochnomen)
         {
-            Assert.That(_driver.GibtAntwort(), Contains.Substring(
-                string.Format("{0}. {1}", lochnummer, lochnomen)));
+            _driver.AssertThatAntwortContains("{0}. {1}", lochnummer, lochnomen);
         }
     }
 }
