@@ -20,6 +20,7 @@ namespace AkzeptanzTests
         [BeforeScenario]
         public void BeforeScenario()
         {
+            _driver.Starte();
         }
 
         [AfterScenario]

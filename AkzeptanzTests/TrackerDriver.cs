@@ -4,9 +4,9 @@ namespace AkzeptanzTests
 {
     public class TrackerDriver
     {
-        private readonly Process _tracker;
+        private Process _tracker;
 
-        public TrackerDriver()
+        public void Starte()
         {
             _tracker = Process.Start(new ProcessStartInfo
                                          {
@@ -14,8 +14,13 @@ namespace AkzeptanzTests
                                              UseShellExecute = false,
                                              RedirectStandardOutput = true,
                                              RedirectStandardInput = true,
-                                             CreateNoWindow = true,                                             
+                                             CreateNoWindow = true,
                                          });
+        }
+
+        public void Beende()
+        {
+            _tracker.Kill();
         }
 
         internal void SchlageBall()
@@ -27,11 +32,6 @@ namespace AkzeptanzTests
         {
             string antwort = _tracker.StandardOutput.ReadLine();
             return antwort;
-        }
-
-        public void Beende()
-        {
-            _tracker.Kill();
         }
     }
 }
