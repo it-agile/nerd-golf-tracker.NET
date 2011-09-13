@@ -10,16 +10,22 @@ namespace AkzeptanzTests
     [Binding]
     public class TrackerDriverFixture
     {
+        private readonly TrackerDriver _driver;
+
+        public TrackerDriverFixture(TrackerDriver driver)
+        {
+            _driver = driver;
+        }
+
         [BeforeScenario]
         public void BeforeScenario()
         {
-            TrackerDriver.instance = new TrackerDriver();
         }
 
         [AfterScenario]
         public void AfterScenario()
         {
-            TrackerDriver.instance.Beende();
+            _driver.Beende();
         }
     }
 }

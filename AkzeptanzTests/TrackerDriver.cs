@@ -2,13 +2,11 @@ using System.Diagnostics;
 
 namespace AkzeptanzTests
 {
-    internal class TrackerDriver
+    public class TrackerDriver
     {
-        internal static TrackerDriver instance;
-
         private readonly Process _tracker;
 
-        internal TrackerDriver()
+        public TrackerDriver()
         {
             _tracker = Process.Start(new ProcessStartInfo
                                          {
