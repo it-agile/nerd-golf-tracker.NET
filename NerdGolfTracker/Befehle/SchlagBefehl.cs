@@ -13,5 +13,10 @@ namespace NerdGolfTracker.Befehle
         {
             get { return new Schlag(); }
         }
+
+        public string Erklaerung
+        {
+            get { return "zaehlt einen Schlag"; }
+        }
     }
 }

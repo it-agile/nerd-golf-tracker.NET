@@ -13,5 +13,10 @@ namespace NerdGolfTracker.Befehle
         {
             get { return new Hilfe(); }
         }
+
+        public string Erklaerung
+        {
+            get { return "zeigt Dir diese Erklaerung"; }
+        }
     }
 }

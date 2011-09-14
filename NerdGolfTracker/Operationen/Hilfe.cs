@@ -1,3 +1,5 @@
+using NerdGolfTracker.Befehle;
+
 namespace NerdGolfTracker.Operationen
 {
     public class Hilfe : Operation
@@ -5,9 +7,14 @@ namespace NerdGolfTracker.Operationen
         public string FuehreAus(Scorecard scorecard)
         {
             return "Ich helfe dir beim Fuehren der Scorecard. Ich reagiere auf folgende Befehle: " +
-                   "\"Schlage Ball\" zaehlt einen Schlag, " +
-                   "\"Naechstes Loch\" bringt Dich zum naechsten Loch, " +
-                   "\"Hilfe\" zeigt diese Erklaerung.";
+                   HilfstextFuer(new SchlagBefehl()) + ", " +
+                   HilfstextFuer(new LochwechselBefehl()) + ", " +
+                   HilfstextFuer(new HilfeBefehl()) + ".";
+        }
+
+        private string HilfstextFuer(Befehl befehl)
+        {
+            return string.Format("\"{0}\" {1}", befehl.Kommando, befehl.Erklaerung);
         }
     }
 }

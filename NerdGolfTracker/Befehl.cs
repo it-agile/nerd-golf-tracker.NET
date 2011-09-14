@@ -4,5 +4,6 @@ namespace NerdGolfTracker
     {
         string Kommando { get; }
         Operation Operation { get; }
+        string Erklaerung { get; }
     }
 }

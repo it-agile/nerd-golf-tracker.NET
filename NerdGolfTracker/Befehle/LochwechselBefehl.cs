@@ -13,5 +13,10 @@ namespace NerdGolfTracker.Befehle
         {
             get { return new Lochwechsel(); }
         }
+
+        public string Erklaerung
+        {
+            get { return "bringt Dich zum naechsten Loch"; }
+        }
     }
 }
