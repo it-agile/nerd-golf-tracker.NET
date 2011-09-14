@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using TechTalk.SpecFlow;
 
-namespace AkzeptanzTests
+namespace AkzeptanzTests.Bindings
 {
     [Binding]
     public class TrackerDriverFixture

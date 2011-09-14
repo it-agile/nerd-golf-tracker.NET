@@ -1,6 +1,6 @@
 using TechTalk.SpecFlow;
 
-namespace AkzeptanzTests
+namespace AkzeptanzTests.Bindings
 {
     [Binding]
     public class BallSchlagenSteps

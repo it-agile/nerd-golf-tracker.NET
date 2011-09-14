@@ -39,27 +39,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Begruessung.feature.cs">
+    <Compile Include="Bindings\BallSchlagenSteps.cs" />
+    <Compile Include="Bindings\LochwechselSteps.cs" />
+    <Compile Include="Bindings\SchlaegeZaehlenSteps.cs" />
+    <Compile Include="Bindings\TrackerDriverFixture.cs" />
+    <Compile Include="Features\Ball schlagen.feature.cs">
+      <DependentUpon>Ball schlagen.feature</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\Begruessung.feature.cs">
       <DependentUpon>Begruessung.feature</DependentUpon>
-    </Compile>
-    <Compile Include="LochwechselSteps.cs" />
-    <Compile Include="SchlaegeZaehlenSteps.cs" />
-    <Compile Include="Lochwechsel.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Lochwechsel.feature</DependentUpon>
     </Compile>
-    <Compile Include="TrackerDriverFixture.cs" />
+    <Compile Include="Features\Lochwechsel.feature.cs">
+      <DependentUpon>Lochwechsel.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="TrackerDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ball schlagen.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Ball schlagen.feature</DependentUpon>
-    </Compile>
-    <Compile Include="BallSchlagenSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NerdGolfTracker\NerdGolfTracker.csproj">
@@ -69,15 +69,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Ball schlagen.feature">
+    <None Include="Features\Ball schlagen.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Ball schlagen.feature.cs</LastGenOutput>
     </None>
-    <None Include="Begruessung.feature">
+    <None Include="Features\Begruessung.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Begruessung.feature.cs</LastGenOutput>
     </None>
-    <None Include="Lochwechsel.feature">
+    <None Include="Features\Lochwechsel.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Lochwechsel.feature.cs</LastGenOutput>
     </None>

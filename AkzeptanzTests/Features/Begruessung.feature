@@ -1,5 +1,5 @@
-ï»¿FunktionalitÃ¤t: Begruessung
+Funktionalität: Begruessung
 
 Szenario: Meldung nach dem Start
 	Wenn ich den NerdGolfTracker starte,
-	Dann begrÃ¼ÃŸt er mich auf dem 1. Loch.
+	Dann begrüßt er mich auf dem 1. Loch.

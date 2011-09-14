@@ -10,7 +10,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace AkzeptanzTests
+namespace AkzeptanzTests.Features
 {
     using TechTalk.SpecFlow;
     
