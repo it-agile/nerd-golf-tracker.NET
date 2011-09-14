@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using NerdGolfTracker.Operationen;
 
 namespace NerdGolfTracker
 {
@@ -9,8 +10,9 @@ namespace NerdGolfTracker
     {
         static void Main(string[] args)
         {
-            var tracker = new Tracker(new EinfacherInterpreter(), new EinfacheScorecard());
-            Console.WriteLine("Du bist jetzt auf dem 1. Loch.");
+            var scorecard = new EinfacheScorecard();
+            var tracker = new Tracker(new EinfacherInterpreter(), scorecard);
+            Console.WriteLine(new Lochbegruessung().FuehreAus(scorecard));
             while (true)
             {
                 var befehl = Console.ReadLine();

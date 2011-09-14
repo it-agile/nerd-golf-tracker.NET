@@ -5,7 +5,7 @@ namespace NerdGolfTracker.Operationen
         public string FuehreAus(Scorecard scorecard)
         {
             scorecard.SchliesseLochAb();
-            return string.Format("Du bist jetzt auf dem {0}. Loch.", scorecard.Lochnummer);
+            return new Lochbegruessung().FuehreAus(scorecard);
         }
     }
 }
