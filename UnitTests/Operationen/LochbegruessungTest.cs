@@ -1,9 +1,9 @@
-﻿using Moq;
+using Moq;
 using NUnit.Framework;
 using NerdGolfTracker;
 using NerdGolfTracker.Operationen;
 
-namespace UnitTests
+namespace UnitTests.Operationen
 {
     [TestFixture]
     class LochbegruessungTest
