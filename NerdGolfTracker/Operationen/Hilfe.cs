@@ -5,16 +5,11 @@ namespace NerdGolfTracker.Operationen
 {
     public class Hilfe : Operation
     {
-        private List<Befehl> _befehle = new List<Befehl> {
-            new LochwechselBefehl(),
-            new SchlagBefehl(),
-            new HilfeBefehl(),
-        };
-
         public string FuehreAus(Scorecard scorecard)
         {
+            var hilfstexte = new AlleBefehle().Befehle().ConvertAll(HilfstextFuer);
             return "Ich helfe dir beim Fuehren der Scorecard. Ich reagiere auf folgende Befehle: " +
-                   string.Join(", ", _befehle.ConvertAll(HilfstextFuer))
+                   string.Join(", ", hilfstexte)
                    + ".";
         }
 
