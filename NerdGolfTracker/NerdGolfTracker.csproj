@@ -34,19 +34,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="EinfacherInterpreter.cs" />
     <Compile Include="EinfacheScorecard.cs" />
     <Compile Include="Interpreter.cs" />
     <Compile Include="Operation.cs" />
+    <Compile Include="Operationen\Lochausgabe.cs" />
     <Compile Include="Operationen\Lochbegruessung.cs" />
     <Compile Include="Operationen\Lochwechsel.cs" />
     <Compile Include="Operationen\Schlag.cs" />
