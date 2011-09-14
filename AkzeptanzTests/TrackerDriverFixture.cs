@@ -23,6 +23,13 @@ namespace AkzeptanzTests
             _driver.Starte();
         }
 
+        [When(@"ich den NerdGolfTracker starte,")]
+        public void StarteTracker()
+        {
+            // Nur da, um Szenario sprechend zu schreiben.
+            // Der Tracker wird automatisch davor gestartet.
+        }
+
         [AfterScenario]
         public void AfterScenario()
         {

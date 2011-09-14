@@ -19,6 +19,7 @@ namespace AkzeptanzTests
                                              RedirectStandardInput = true,
                                              CreateNoWindow = true,
                                          });
+            SpeichereAntwort();
         }
 
         public void Beende()
@@ -29,6 +30,11 @@ namespace AkzeptanzTests
         public void EmpfangeAnweisung(string anweisung)
         {
             _tracker.StandardInput.WriteLine(anweisung);
+            SpeichereAntwort();
+        }
+
+        private void SpeichereAntwort()
+        {
             _antwort = _tracker.StandardOutput.ReadLine();
         }
 

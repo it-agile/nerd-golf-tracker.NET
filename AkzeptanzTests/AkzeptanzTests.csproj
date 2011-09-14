@@ -45,6 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Begruessung.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Begruessung.feature</DependentUpon>
+    </Compile>
     <Compile Include="LochwechselSteps.cs" />
     <Compile Include="SchlaegeZaehlenSteps.cs" />
     <Compile Include="Lochwechsel.feature.cs">
@@ -73,6 +78,10 @@
     <None Include="Ball schlagen.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Ball schlagen.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Begruessung.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Begruessung.feature.cs</LastGenOutput>
     </None>
     <None Include="Lochwechsel.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
