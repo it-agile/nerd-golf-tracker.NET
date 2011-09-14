@@ -1,6 +1,6 @@
 using NerdGolfTracker.Operationen;
 
-namespace NerdGolfTracker
+namespace NerdGolfTracker.Befehle
 {
     public class LochwechselBefehl : Befehl
     {

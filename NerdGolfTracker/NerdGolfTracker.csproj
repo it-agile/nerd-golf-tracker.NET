@@ -35,10 +35,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Befehl.cs" />
+    <Compile Include="Befehle\HilfeBefehl.cs" />
+    <Compile Include="Befehle\LochwechselBefehl.cs" />
+    <Compile Include="Befehle\SchlagBefehl.cs" />
     <Compile Include="EinfacherInterpreter.cs" />
     <Compile Include="EinfacheScorecard.cs" />
     <Compile Include="Interpreter.cs" />
-    <Compile Include="LochwechselBefehl.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="Operationen\Hilfe.cs" />
     <Compile Include="Operationen\Lochausgabe.cs" />
