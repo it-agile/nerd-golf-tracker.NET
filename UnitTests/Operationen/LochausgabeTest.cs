@@ -6,14 +6,14 @@ using NerdGolfTracker.Operationen;
 namespace UnitTests.Operationen
 {
     [TestFixture]
-    class LochbegruessungTest
+    class LochausgabeTest
     {
         [Test]
         public void LiefertTextMitAktuellemLoch()
         {
             var scorecardStub = new Mock<Scorecard>();
             scorecardStub.Setup(scorecard => scorecard.Lochnummer).Returns(2);
-            Assert.That(new Lochbegruessung().FuehreAus(scorecardStub.Object), 
+            Assert.That(new Lochausgabe().FuehreAus(scorecardStub.Object), 
                 Contains.Substring("auf dem 2. Loch"));
         }
     }

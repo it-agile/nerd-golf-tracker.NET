@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using NUnit.Framework.Constraints;
 using NUnit.Framework;
 
 namespace AkzeptanzTests
