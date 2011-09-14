@@ -13,15 +13,21 @@ namespace AkzeptanzTests.Bindings
         }
 
         [When(@"ich die Hilfe aufrufe,")]
-        public void WennIchDieHilfeAufrufe()
+        public void RufeHilfeAuf()
         {
             _driver.EmpfangeAnweisung("Hilfe");
         }
 
         [Then(@"zeigt der NerdGolfTracker seine Benutzung an.")]
-        public void DannZeigtDerNerdGolfTrackerSeineBenutzungAn()
+        public void PruefeHilfeZurBenutzung()
         {
             _driver.AssertThatAntwortContains("folgende Befehle");
+        }
+
+        [Then(@"erklärt der NerdGolfTracker das Kommando ""Schlage Ball""\.")]
+        public void PruefeHilfeZuKommando()
+        {
+            _driver.AssertThatAntwortContains("Schlage Ball");
         }
     }
 }

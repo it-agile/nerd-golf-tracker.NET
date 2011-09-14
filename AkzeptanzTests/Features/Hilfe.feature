@@ -7,8 +7,9 @@ Szenario: Allgemeine Hilfe
 @Ignore
 Szenario: Hilfe zur Hilfe
 
-@Ignore
 Szenario: Hilfe zum Ballschlagen
+	Wenn ich die Hilfe aufrufe,
+	Dann erklärt der NerdGolfTracker das Kommando "Schlage Ball".
 
 @Ignore
 Szenario: Hilfe zum Lochwechsel

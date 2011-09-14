@@ -93,13 +93,15 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Hilfe zum Ballschlagen")]
-        [NUnit.Framework.IgnoreAttribute()]
         public virtual void HilfeZumBallschlagen()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Hilfe zum Ballschlagen", new string[] {
-                        "Ignore"});
-#line 11
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Hilfe zum Ballschlagen", ((string[])(null)));
+#line 10
 this.ScenarioSetup(scenarioInfo);
+#line 11
+ testRunner.When("ich die Hilfe aufrufe,");
+#line 12
+ testRunner.Then("erklärt der NerdGolfTracker das Kommando \"Schlage Ball\".");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -111,7 +113,7 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Hilfe zum Lochwechsel", new string[] {
                         "Ignore"});
-#line 14
+#line 15
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
