@@ -10,7 +10,7 @@ namespace NerdGolfTracker
         static void Main(string[] args)
         {
             var tracker = new Tracker(new EinfacherInterpreter(), new EinfacheScorecard());
-            Console.WriteLine("Du bist auf dem 1. Loch.");
+            Console.WriteLine("Du bist jetzt auf dem 1. Loch.");
             while (true)
             {
                 var befehl = Console.ReadLine();

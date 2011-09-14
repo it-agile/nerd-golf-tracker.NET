@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Moq;
+﻿using Moq;
 using NUnit.Framework;
 using NerdGolfTracker;
+using NerdGolfTracker.Operationen;
 
 namespace UnitTests
 {
@@ -27,6 +24,5 @@ namespace UnitTests
             var ausgabe = new Schlag().FuehreAus(scorecardStub.Object);
             Assert.That(ausgabe, Contains.Substring("2 Schlaege"));
         }
-        
     }
 }

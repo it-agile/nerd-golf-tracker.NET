@@ -1,4 +1,4 @@
-namespace NerdGolfTracker
+namespace NerdGolfTracker.Operationen
 {
     public class Lochwechsel : Operation
     {

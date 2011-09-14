@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EinfacheScorecardTest.cs" />
+    <Compile Include="LochbegruessungTest.cs" />
     <Compile Include="LochwechselTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SchlagTest.cs" />

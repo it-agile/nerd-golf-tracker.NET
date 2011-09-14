@@ -46,9 +46,10 @@
     <Compile Include="EinfacherInterpreter.cs" />
     <Compile Include="EinfacheScorecard.cs" />
     <Compile Include="Interpreter.cs" />
-    <Compile Include="Lochwechsel.cs" />
     <Compile Include="Operation.cs" />
-    <Compile Include="Schlag.cs" />
+    <Compile Include="Operationen\Lochbegruessung.cs" />
+    <Compile Include="Operationen\Lochwechsel.cs" />
+    <Compile Include="Operationen\Schlag.cs" />
     <Compile Include="Tracker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
