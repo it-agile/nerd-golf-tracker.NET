@@ -48,6 +48,7 @@
     <Compile Include="EinfacheScorecardTest.cs" />
     <Compile Include="Operationen\LochausgabeTest.cs" />
     <Compile Include="Operationen\LochwechselTest.cs" />
+    <Compile Include="Operationen\SchlagausgabeTest.cs" />
     <Compile Include="Operationen\SchlagTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrackerTest.cs" />

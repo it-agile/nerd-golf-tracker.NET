@@ -42,6 +42,7 @@
     <Compile Include="Operationen\Lochbegruessung.cs" />
     <Compile Include="Operationen\Lochwechsel.cs" />
     <Compile Include="Operationen\Schlag.cs" />
+    <Compile Include="Operationen\Schlagausgabe.cs" />
     <Compile Include="Tracker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
