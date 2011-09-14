@@ -38,6 +38,7 @@
     <Compile Include="EinfacheScorecard.cs" />
     <Compile Include="Interpreter.cs" />
     <Compile Include="Operation.cs" />
+    <Compile Include="Operationen\Hilfe.cs" />
     <Compile Include="Operationen\Lochausgabe.cs" />
     <Compile Include="Operationen\Lochbegruessung.cs" />
     <Compile Include="Operationen\Lochwechsel.cs" />

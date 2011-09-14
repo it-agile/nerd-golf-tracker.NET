@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bindings\BallSchlagenSteps.cs" />
+    <Compile Include="Bindings\HilfeSteps.cs" />
     <Compile Include="Bindings\LochwechselSteps.cs" />
     <Compile Include="Bindings\SchlaegeZaehlenSteps.cs" />
     <Compile Include="Bindings\TrackerDriverFixture.cs" />
@@ -52,6 +53,11 @@
       <DependentUpon>Begruessung.feature</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\Hilfe.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hilfe.feature</DependentUpon>
     </Compile>
     <Compile Include="Features\Lochwechsel.feature.cs">
       <DependentUpon>Lochwechsel.feature</DependentUpon>
@@ -76,6 +82,10 @@
     <None Include="Features\Begruessung.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Begruessung.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Hilfe.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Hilfe.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\Lochwechsel.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
