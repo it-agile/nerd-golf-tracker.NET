@@ -79,42 +79,19 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Hilfe zur Hilfe")]
-        [NUnit.Framework.IgnoreAttribute()]
-        public virtual void HilfeZurHilfe()
+        [NUnit.Framework.DescriptionAttribute("Hilfe zu Kommandos")]
+        [NUnit.Framework.TestCaseAttribute("Hilfe", new string[0])]
+        [NUnit.Framework.TestCaseAttribute("Schlage Ball", new string[0])]
+        [NUnit.Framework.TestCaseAttribute("Naechstes Loch", new string[0])]
+        public virtual void HilfeZuKommandos(string kommando, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Hilfe zur Hilfe", new string[] {
-                        "Ignore"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Hilfe zu Kommandos", exampleTags);
+#line 7
+this.ScenarioSetup(scenarioInfo);
 #line 8
-this.ScenarioSetup(scenarioInfo);
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Hilfe zum Ballschlagen")]
-        public virtual void HilfeZumBallschlagen()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Hilfe zum Ballschlagen", ((string[])(null)));
-#line 10
-this.ScenarioSetup(scenarioInfo);
-#line 11
  testRunner.When("ich die Hilfe aufrufe,");
-#line 12
- testRunner.Then("erklärt der NerdGolfTracker das Kommando \"Schlage Ball\".");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Hilfe zum Lochwechsel")]
-        [NUnit.Framework.IgnoreAttribute()]
-        public virtual void HilfeZumLochwechsel()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Hilfe zum Lochwechsel", new string[] {
-                        "Ignore"});
-#line 15
-this.ScenarioSetup(scenarioInfo);
+#line 9
+ testRunner.Then(string.Format("erklärt der NerdGolfTracker das Kommando \"{0}\".", kommando));
 #line hidden
             this.ScenarioCleanup();
         }

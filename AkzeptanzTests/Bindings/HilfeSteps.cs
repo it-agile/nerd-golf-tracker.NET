@@ -24,10 +24,10 @@ namespace AkzeptanzTests.Bindings
             _driver.AssertThatAntwortContains("folgende Befehle");
         }
 
-        [Then(@"erklärt der NerdGolfTracker das Kommando ""Schlage Ball""\.")]
-        public void PruefeHilfeZuKommando()
+        [Then(@"erklärt der NerdGolfTracker das Kommando ""(.*)""\.")]
+        public void PruefeHilfeZuKommando(string kommando)
         {
-            _driver.AssertThatAntwortContains("Schlage Ball");
+            _driver.AssertThatAntwortContains(kommando);
         }
     }
 }
