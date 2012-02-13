@@ -1,9 +1,19 @@
+# Kram, den die Werkzeuge so erzeugen
+#####################################
+# ReSharper
 _ReSharper.NerdGolfTracker
+NerdGolfTracker.6.0.ReSharper.user
+
+# FinalBuilder
 NerdGolfTracker.fb7lck
 NerdGolfTracker.fbl7
 NerdGolfTracker.fbpInf
 NerdGolfTracker.suo
-NerdGolfTracker.6.0.ReSharper.user
+
+# Visual Studio
+*DotSettings.user
 */bin
 */obj
 
+# NUnit-GUI
+*VisualState.xml
