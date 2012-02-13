@@ -1,6 +1,6 @@
-<NUnitProject>
+﻿<NUnitProject>
   <Settings activeconfig="Debug" />
-  <Config name="Debug" binpathtype="Auto">
+  <Config name="Debug" configfile="App.config" binpathtype="Auto">
     <assembly path="bin\Debug\AkzeptanzTests.dll" />
   </Config>
   <Config name="Release" binpathtype="Auto" />
