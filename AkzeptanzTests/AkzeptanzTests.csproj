@@ -54,11 +54,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Features\Defaultverhalten.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Defaultverhalten.feature</DependentUpon>
-    </Compile>
     <Compile Include="Features\Hilfe.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -92,10 +87,6 @@
     <None Include="Features\Begruessung.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Begruessung.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Features\Defaultverhalten.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Defaultverhalten.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\Hilfe.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
