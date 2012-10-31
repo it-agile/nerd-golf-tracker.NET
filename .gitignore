@@ -2,15 +2,15 @@
 #####################################
 # ReSharper
 _ReSharper.NerdGolfTracker
-NerdGolfTracker.6.0.ReSharper.user
+*.ReSharper.user
 
 # FinalBuilder
 NerdGolfTracker.fb7lck
 NerdGolfTracker.fbl7
 NerdGolfTracker.fbpInf
-NerdGolfTracker.suo
 
 # Visual Studio
+*.suo
 *DotSettings.user
 */bin
 */obj
