@@ -9,7 +9,6 @@ namespace UnitTests.Operationen
     public class SchlagausgabeTest
     {
         [TestCase(1, Result="1 Schlag")]
-        [TestCase(2, Result="2 Schlaege")]
         public string GibtSchlagzahlenAus(int schlagzahl)
         {
             var scorecardStub = new Mock<Scorecard>();
