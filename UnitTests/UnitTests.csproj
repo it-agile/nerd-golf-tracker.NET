@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="EinfacherInterpreterTest.cs" />
     <Compile Include="EinfacheScorecardTest.cs" />
+    <Compile Include="Operationen\HilfeTest.cs" />
     <Compile Include="Operationen\LochausgabeTest.cs" />
     <Compile Include="Operationen\LochwechselTest.cs" />
     <Compile Include="Operationen\SchlagausgabeTest.cs" />

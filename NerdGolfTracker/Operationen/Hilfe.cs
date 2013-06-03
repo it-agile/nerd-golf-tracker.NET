@@ -9,13 +9,13 @@ namespace NerdGolfTracker.Operationen
         {
             var hilfstexte = new AlleBefehle().Befehle().ConvertAll(HilfstextFuer);
             return "Ich helfe dir beim Fuehren der Scorecard. Ich reagiere auf folgende Befehle: " +
-                   string.Join(", ", hilfstexte)
+                   string.Join(System.Environment.NewLine, hilfstexte)
                    + ".";
         }
 
         private string HilfstextFuer(Befehl befehl)
         {
-            return string.Format("\"{0}\" {1}", befehl.Kommando, befehl.Erklaerung);
+            return string.Format(" * \"{0}\" {1}", befehl.Kommando, befehl.Erklaerung);
         }
     }
 }
