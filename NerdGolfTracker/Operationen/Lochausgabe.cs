@@ -4,7 +4,7 @@ namespace NerdGolfTracker.Operationen
     {
         public string FuehreAus(Scorecard scorecard)
         {
-            return string.Format("auf dem {0}. Loch", scorecard.Lochnummer);
+            return string.Format("auf dem {0}.Loch", scorecard.Lochnummer);
         }
     }
 }

@@ -22,7 +22,7 @@ namespace AkzeptanzTests.Bindings
         [Then(@"begrüßt.* auf dem (\d+)\. (.*)\.")]
         public void PruefeLoch(int lochnummer, string lochnomen)
         {
-            _driver.AssertThatAntwortContains("{0}. {1}", lochnummer, lochnomen);
+            _driver.AssertThatAntwortContains("{0}.", lochnummer, lochnomen);
         }
     }
 }

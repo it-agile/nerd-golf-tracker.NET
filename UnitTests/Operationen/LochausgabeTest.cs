@@ -14,7 +14,7 @@ namespace UnitTests.Operationen
             var scorecardStub = new Mock<Scorecard>();
             scorecardStub.Setup(scorecard => scorecard.Lochnummer).Returns(2);
             Assert.That(new Lochausgabe().FuehreAus(scorecardStub.Object), 
-                Contains.Substring("auf dem 2. Loch"));
+                Contains.Substring("auf dem 2.Loch"));
         }
     }
 }
