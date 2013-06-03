@@ -12,7 +12,6 @@ namespace NerdGolfTracker
 
         public void SchliesseLochAb()
         {
-            AnzahlSchlaege = 0;
             Lochnummer++;
         }
 

@@ -66,18 +66,20 @@ namespace AkzeptanzTests.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Schlagzahl zuruecksetzen")]
+        [NUnit.Framework.IgnoreAttribute()]
         public virtual void SchlagzahlZuruecksetzen()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schlagzahl zuruecksetzen", ((string[])(null)));
-#line 3
-this.ScenarioSetup(scenarioInfo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schlagzahl zuruecksetzen", new string[] {
+                        "ignore"});
 #line 4
- testRunner.Given("ich habe den Ball einmal geschlagen,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Angenommen ");
+this.ScenarioSetup(scenarioInfo);
 #line 5
- testRunner.When("ich zum nächsten Loch gehe,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
+ testRunner.Given("ich habe den Ball einmal geschlagen,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Angenommen ");
 #line 6
- testRunner.And("nun den Ball schlage,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Und ");
+ testRunner.When("ich zum nächsten Loch gehe,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
 #line 7
+ testRunner.And("nun den Ball schlage,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Und ");
+#line 8
  testRunner.Then("zählt der NerdGolfTracker 1 Schlag.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
 #line hidden
             this.ScenarioCleanup();
@@ -88,13 +90,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LochHochzaehlen()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Loch hochzaehlen", ((string[])(null)));
-#line 9
-this.ScenarioSetup(scenarioInfo);
 #line 10
- testRunner.When("ich zum nächsten Loch gehe,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
+this.ScenarioSetup(scenarioInfo);
 #line 11
- testRunner.And("nun den Ball schlage,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Und ");
+ testRunner.When("ich zum nächsten Loch gehe,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
 #line 12
+ testRunner.And("nun den Ball schlage,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Und ");
+#line 13
  testRunner.Then("zählt der NerdGolfTracker die Schläge auf dem 2. Loch.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
 #line hidden
             this.ScenarioCleanup();
