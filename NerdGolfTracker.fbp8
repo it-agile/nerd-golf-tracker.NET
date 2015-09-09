@@ -1,0 +1,87 @@
+﻿project
+begin
+  projectid = {8D7FF6B8-3F72-4446-8AF4-FFCEE8145005}
+  target
+  begin
+    name = Default
+    targetid = {6F230032-683D-4DBD-A5D3-89921DDD3947}
+    rootaction
+    begin
+      action.msbuild.execute
+      begin
+        architecture = ta32
+        buildfile = %FBPROJECTDIR%\\NerdGolfTracker.sln
+        description = Compile
+        designtimeshowalltargets = true
+        disablenodereuse = true
+        enabletimeout = false
+        expandimpersonationtoken = false
+        id = {BC26867E-4D81-4892-B8CB-FC826D63A781}
+        impersonateusenetcredonly = false
+        impersonateuser = false
+        loglevel = llNormal
+        logprocessparameters = false
+        maxcpucount = 0
+        msbuildversion = v4
+        nologo = true
+        outputtolog = false
+        overridesdkdefault = false
+        processoraffinity = 0
+        processpriority = tpNormal
+        sdkversion = v4.0
+        structuredlogging = true
+        terminateontimeout = false
+        timeoutlength = 2
+        useerrordialogmonitor = false
+      end
+      action.nunit.execute
+      begin
+        categorymasktype = None
+        description = Unittests
+        enabletimeout = false
+        expandimpersonationtoken = false
+        failifnotests = false
+        id = {61DEC6F4-3522-478A-B93A-928F96DE693A}
+        impersonateusenetcredonly = false
+        impersonateuser = false
+        logprocessparameters = true
+        nologo = false
+        noshadow = false
+        nothread = false
+        processoraffinity = 0
+        processpriority = tpNormal
+        projectfile = %FBPROJECTDIR%\\UnitTests\\NerdGolfTracker.nunit
+        setframeworkver = false
+        terminateontimeout = false
+        timeoutlength = 2
+        useerrordialogmonitor = false
+        useprojectfile = true
+        xmltoconsole = false
+      end
+      action.nunit.execute
+      begin
+        categorymasktype = None
+        description = Akzeptanztests
+        enabletimeout = false
+        expandimpersonationtoken = false
+        failifnotests = false
+        id = {93E28790-D185-4888-813D-4A13B8F9D063}
+        impersonateusenetcredonly = false
+        impersonateuser = false
+        logprocessparameters = true
+        nologo = false
+        noshadow = false
+        nothread = false
+        processoraffinity = 0
+        processpriority = tpNormal
+        projectfile = %FBPROJECTDIR%\\AkzeptanzTests\\AkzeptanzTests.nunit
+        setframeworkver = false
+        terminateontimeout = false
+        timeoutlength = 2
+        useerrordialogmonitor = false
+        useprojectfile = true
+        xmltoconsole = false
+      end
+    end
+  end
+end
