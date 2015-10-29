@@ -56,7 +56,34 @@ begin
         timeoutlength = 2
         useerrordialogmonitor = false
         useprojectfile = true
+        xmloutputfile = "C:\\Users\\Sven\\Documents\\Visual Studio 2015\\Projects\\nerd-golf-tracker.NET\\UnitTests\\TestResult.xml"
         xmltoconsole = false
+        action.process.execute
+        begin
+          captureoutput = true
+          enablelivecapture = true
+          enablereturncodecheck = true
+          enabletimeout = false
+          expandimpersonationtoken = false
+          hidewindow = true
+          id = {199304B4-8411-40C3-A5A1-733EA3F29EA5}
+          impersonateusenetcredonly = false
+          impersonateuser = false
+          logoutput = true
+          logprocessparameters = true
+          params = "UnitTests\\TestResult.xml reports\\unit-report.html"
+          processoraffinity = 0
+          processpriority = tpNormal
+          programname = "C:\\Users\\Sven\\Documents\\Visual Studio 2015\\Projects\\nerd-golf-tracker.NET\\bin\\ReportUnit.exe"
+          redirectstderr = true
+          returncodecomparator = rcEqualTo
+          returncodetocheck = 0
+          startindir = "C:\\Users\\Sven\\Documents\\Visual Studio 2015\\Projects\\nerd-golf-tracker.NET"
+          terminateontimeout = false
+          timeoutlength = 0
+          useerrordialogmonitor = false
+          waitforcompletion = true
+        end
       end
       action.nunit.execute
       begin
@@ -80,7 +107,34 @@ begin
         timeoutlength = 2
         useerrordialogmonitor = false
         useprojectfile = true
+        xmloutputfile = "C:\\Users\\Sven\\Documents\\Visual Studio 2015\\Projects\\nerd-golf-tracker.NET\\AkzeptanzTests\\TestResult.xml"
         xmltoconsole = false
+        action.process.execute
+        begin
+          captureoutput = true
+          enablelivecapture = true
+          enablereturncodecheck = true
+          enabletimeout = false
+          expandimpersonationtoken = false
+          hidewindow = true
+          id = {7617ACBD-B944-4FE8-AA1D-D5F8B63E5777}
+          impersonateusenetcredonly = false
+          impersonateuser = false
+          logoutput = true
+          logprocessparameters = true
+          params = "AkzeptanzTests\\TestResult.xml reports\\spec-report.html"
+          processoraffinity = 0
+          processpriority = tpNormal
+          programname = "C:\\Users\\Sven\\Documents\\Visual Studio 2015\\Projects\\nerd-golf-tracker.NET\\bin\\ReportUnit.exe"
+          redirectstderr = true
+          returncodecomparator = rcEqualTo
+          returncodetocheck = 0
+          startindir = "C:\\Users\\Sven\\Documents\\Visual Studio 2015\\Projects\\nerd-golf-tracker.NET"
+          terminateontimeout = false
+          timeoutlength = 0
+          useerrordialogmonitor = false
+          waitforcompletion = true
+        end
       end
     end
   end

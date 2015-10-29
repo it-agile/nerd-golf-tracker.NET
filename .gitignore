@@ -17,3 +17,5 @@ NerdGolfTracker.fbpInf
 
 # NUnit-GUI
 *VisualState.xml
+reports
+*/TestResult.xml
