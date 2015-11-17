@@ -56,7 +56,7 @@ begin
         timeoutlength = 2
         useerrordialogmonitor = false
         useprojectfile = true
-        xmloutputfile = "C:\\Users\\Sven\\Documents\\Visual Studio 2015\\Projects\\nerd-golf-tracker.NET\\UnitTests\\TestResult.xml"
+        xmloutputfile = %FBPROJECTDIR%\\UnitTests\\TestResult.xml
         xmltoconsole = false
         action.process.execute
         begin
@@ -71,14 +71,14 @@ begin
           impersonateuser = false
           logoutput = true
           logprocessparameters = true
-          params = "UnitTests\\TestResult.xml reports\\unit-report.html"
+          params = "%FBPROJECTDIR%\\UnitTests\\TestResult.xml reports\\unit-report.html"
           processoraffinity = 0
           processpriority = tpNormal
-          programname = "C:\\Users\\Sven\\Documents\\Visual Studio 2015\\Projects\\nerd-golf-tracker.NET\\bin\\ReportUnit.exe"
+          programname = %FBPROJECTDIR%\\bin\\ReportUnit.exe
           redirectstderr = true
           returncodecomparator = rcEqualTo
           returncodetocheck = 0
-          startindir = "C:\\Users\\Sven\\Documents\\Visual Studio 2015\\Projects\\nerd-golf-tracker.NET"
+          startindir = "."
           terminateontimeout = false
           timeoutlength = 0
           useerrordialogmonitor = false
@@ -107,7 +107,7 @@ begin
         timeoutlength = 2
         useerrordialogmonitor = false
         useprojectfile = true
-        xmloutputfile = "C:\\Users\\Sven\\Documents\\Visual Studio 2015\\Projects\\nerd-golf-tracker.NET\\AkzeptanzTests\\TestResult.xml"
+        xmloutputfile = %FBPROJECTDIR%\\AkzeptanzTests\\TestResult.xml
         xmltoconsole = false
         action.process.execute
         begin
@@ -122,14 +122,14 @@ begin
           impersonateuser = false
           logoutput = true
           logprocessparameters = true
-          params = "AkzeptanzTests\\TestResult.xml reports\\spec-report.html"
+          params = "%FBPROJECTDIR%\\AkzeptanzTests\\TestResult.xml reports\\spec-report.html"
           processoraffinity = 0
           processpriority = tpNormal
-          programname = "C:\\Users\\Sven\\Documents\\Visual Studio 2015\\Projects\\nerd-golf-tracker.NET\\bin\\ReportUnit.exe"
+          programname = %FBPROJECTDIR%\\bin\\ReportUnit.exe
           redirectstderr = true
           returncodecomparator = rcEqualTo
           returncodetocheck = 0
-          startindir = "C:\\Users\\Sven\\Documents\\Visual Studio 2015\\Projects\\nerd-golf-tracker.NET"
+          startindir = "."
           terminateontimeout = false
           timeoutlength = 0
           useerrordialogmonitor = false
