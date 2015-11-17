@@ -71,7 +71,7 @@ begin
           impersonateuser = false
           logoutput = true
           logprocessparameters = true
-          params = "%FBPROJECTDIR%\\UnitTests\\TestResult.xml reports\\unit-report.html"
+          params = "%FBPROJECTDIR%\\UnitTests\\TestResult.xml" "reports\\unit-report.html"
           processoraffinity = 0
           processpriority = tpNormal
           programname = %FBPROJECTDIR%\\bin\\ReportUnit.exe
@@ -122,7 +122,7 @@ begin
           impersonateuser = false
           logoutput = true
           logprocessparameters = true
-          params = "%FBPROJECTDIR%\\AkzeptanzTests\\TestResult.xml reports\\spec-report.html"
+          params = "%FBPROJECTDIR%\\AkzeptanzTests\\TestResult.xml" "reports\\spec-report.html"
           processoraffinity = 0
           processpriority = tpNormal
           programname = %FBPROJECTDIR%\\bin\\ReportUnit.exe
