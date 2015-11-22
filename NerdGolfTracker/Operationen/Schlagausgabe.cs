@@ -4,7 +4,7 @@ namespace NerdGolfTracker.Operationen
     {
         public string FuehreAus(Scorecard scorecard)
         {
-            return string.Format("{0} Schlag", scorecard.AnzahlSchlaege);
+            return string.Format("Du hast {0} Schlag {1}", scorecard.AnzahlSchlaege, new Lochausgabe().FuehreAus(scorecard));
         }
     }
 }

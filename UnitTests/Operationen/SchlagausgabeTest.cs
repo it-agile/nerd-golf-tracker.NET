@@ -8,12 +8,13 @@ namespace UnitTests.Operationen
     [TestFixture]
     public class SchlagausgabeTest
     {
-        [TestCase(1, Result="1 Schlag")]
-        public string GibtSchlagzahlenAus(int schlagzahl)
+        [Test]
+        public void GibtSchlagzahlenAus()
         {
             var scorecardStub = new Mock<Scorecard>();
-            scorecardStub.Setup(scorecard => scorecard.AnzahlSchlaege).Returns(schlagzahl);
-            return new Schlagausgabe().FuehreAus(scorecardStub.Object);
+            scorecardStub.Setup(scorecard => scorecard.AnzahlSchlaege).Returns(1);
+            var ausgabe = new Schlagausgabe().FuehreAus(scorecardStub.Object);
+            Assert.That(ausgabe, Is.StringContaining("1 Schlag"));
         }
     }
 }

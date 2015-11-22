@@ -11,7 +11,7 @@ namespace NerdGolfTracker.Operationen
 
         public string FuehreAus(Scorecard scorecard)
         {
-            return string.Format("Du bist jetzt {0}.", _folgeOperation.FuehreAus(scorecard));
+            return string.Format("Du bist jetzt {0}", _folgeOperation.FuehreAus(scorecard));
         }
     }
 }
