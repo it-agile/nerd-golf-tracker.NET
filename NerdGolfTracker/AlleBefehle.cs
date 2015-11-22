@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using NerdGolfTracker.Befehle;
 
 namespace NerdGolfTracker
 {
@@ -8,11 +9,11 @@ namespace NerdGolfTracker
     {
         public List<Befehl> Befehle()
         {
-            var befehlstyp = typeof (Befehl);
-            var alleBefehlstypen = 
-                GetType().Assembly.GetTypes().Where(befehlstyp.IsAssignableFrom);
-            var alleKonkretenBefehlstypen = alleBefehlstypen.Except(new[] { befehlstyp }).ToList();
-            return alleKonkretenBefehlstypen.ConvertAll(b => Activator.CreateInstance(b) as Befehl);
+            var befehle = new List<Befehl>();
+            befehle.Add(new HilfeBefehl());
+            befehle.Add(new LochwechselBefehl());
+            befehle.Add(new SchlagBefehl());
+            return befehle;
         }
     }
 }
