@@ -25,7 +25,7 @@ namespace UnitTests.Operationen
         public void GibtSchlagzahlenAus()
         {
             _scorecardStub.Setup(scorecard => scorecard.AnzahlSchlaege).Returns(1);
-            Assert.That(_schlagausgabe.FuehreAus(_scorecardStub.Object), Is.StringContaining("1 Schlag"));
+            Assert.That(_schlagausgabe.FuehreAus(_scorecardStub.Object), Does.Contain("1 Schlag"));
         }
 
         [Test]

@@ -28,7 +28,7 @@ namespace UnitTests.Operationen
         [Test]
         public void GibtBegruessungAus()
         {
-            Assert.That(_lochbegruessung.FuehreAus(_scorecardMock.Object), Is.StringStarting("Du bist"));
+            Assert.That(_lochbegruessung.FuehreAus(_scorecardMock.Object), Does.StartWith("Du bist"));
         }
 
 
