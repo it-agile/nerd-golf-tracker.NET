@@ -4,19 +4,10 @@ namespace NerdGolfTracker.Befehle
 {
     public class HilfeBefehl : Befehl
     {
-        public string Kommando
-        {
-            get { return "Hilfe"; }
-        }
+        public string Kommando => "Hilfe";
 
-        public Operation Operation
-        {
-            get { return new Hilfe(); }
-        }
+        public Operation Operation => new Hilfe();
 
-        public string Erklaerung
-        {
-            get { return "zeigt Dir diese Erklaerung"; }
-        }
+        public string Erklaerung => "zeigt Dir diese Erklaerung";
     }
 }

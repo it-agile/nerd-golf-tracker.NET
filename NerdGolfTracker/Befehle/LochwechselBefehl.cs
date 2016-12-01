@@ -4,19 +4,10 @@ namespace NerdGolfTracker.Befehle
 {
     public class LochwechselBefehl : Befehl
     {
-        public string Kommando
-        {
-            get { return "Naechstes Loch"; }
-        }
+        public string Kommando => "Naechstes Loch";
 
-        public Operation Operation
-        {
-            get { return new Lochwechsel(new Lochbegruessung(new Lochausgabe())); }
-        }
+        public Operation Operation => new Lochwechsel(new Lochbegruessung(new Lochausgabe()));
 
-        public string Erklaerung
-        {
-            get { return "bringt Dich zum naechsten Loch"; }
-        }
+        public string Erklaerung => "bringt Dich zum naechsten Loch";
     }
 }

@@ -3,12 +3,11 @@ using NerdGolfTracker.Operationen;
 
 namespace NerdGolfTracker
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
             var tracker = new Tracker(new EinfacherInterpreter(),
-                                      new EinfacheScorecard(),
                                       new Lochbegruessung(new Lochausgabe()));
             Console.WriteLine(tracker.Starte());
             while (true)

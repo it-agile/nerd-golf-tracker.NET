@@ -2,7 +2,7 @@ namespace NerdGolfTracker.Operationen
 {
     public class Schlag : Operation
     {
-        private Operation _folgeOperation;
+        private readonly Operation _folgeOperation;
 
         public Schlag(Operation folgeOperation)
         {

@@ -16,7 +16,7 @@ namespace UnitTests
                 .Returns(operationStub.Object);
             operationStub.Setup(operation => operation.FuehreAus(It.IsAny<Scorecard>()))
                 .Returns("Ausgabe");
-            var tracker = new Tracker(interpreterStub.Object, null, null);
+            var tracker = new Tracker(interpreterStub.Object, null);
             Assert.That(tracker.ReagiereAuf("Eingabe"), Is.EqualTo("Ausgabe"));
         }
 
@@ -26,7 +26,7 @@ namespace UnitTests
             var startoperationStub = new Mock<Operation>();
             startoperationStub.Setup(operation => operation.FuehreAus(It.IsAny<Scorecard>()))
                 .Returns("Ausgabe");
-            var tracker = new Tracker(null, null, startoperationStub.Object);
+            var tracker = new Tracker(null, startoperationStub.Object);
             Assert.That(tracker.Starte(), Is.EqualTo("Ausgabe"));
         }
     }

@@ -2,15 +2,15 @@
 {
     public class Tracker
     {
-        private Operation _startoperation;
-        private Scorecard _scorecard;
-        private Interpreter _interpreter;
+        private readonly Operation _startoperation;
+        private readonly Scorecard _scorecard;
+        private readonly Interpreter _interpreter;
 
-        public Tracker(Interpreter interpreter, Scorecard scorecard, Operation startoperation)
+        public Tracker(Interpreter interpreter, Operation startoperation)
         {
             _interpreter = interpreter;
-            _scorecard = scorecard;
             _startoperation = startoperation;
+            _scorecard = new EinfacheScorecard();
         }
 
         public string ReagiereAuf(string kommando)

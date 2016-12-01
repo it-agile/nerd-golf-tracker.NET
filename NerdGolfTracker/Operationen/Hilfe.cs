@@ -15,7 +15,7 @@ namespace NerdGolfTracker.Operationen
 
         private string HilfstextFuer(Befehl befehl)
         {
-            return string.Format(" * \"{0}\" {1}", befehl.Kommando, befehl.Erklaerung);
+            return $" * \"{befehl.Kommando}\" {befehl.Erklaerung}";
         }
     }
 }

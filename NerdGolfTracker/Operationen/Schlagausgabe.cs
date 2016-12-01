@@ -2,7 +2,7 @@ namespace NerdGolfTracker.Operationen
 {
     public class Schlagausgabe : Operation
     {
-        private Operation _folgeOperation;
+        private readonly Operation _folgeOperation;
 
         public Schlagausgabe(Operation folgeOperation)
         {
@@ -11,7 +11,7 @@ namespace NerdGolfTracker.Operationen
 
         public string FuehreAus(Scorecard scorecard)
         {
-            return string.Format("Du hast {0} Schlag {1}", scorecard.AnzahlSchlaege, _folgeOperation.FuehreAus(scorecard));
+            return $"Du hast {scorecard.AnzahlSchlaege} Schlag {_folgeOperation.FuehreAus(scorecard)}";
         }
     }
 }

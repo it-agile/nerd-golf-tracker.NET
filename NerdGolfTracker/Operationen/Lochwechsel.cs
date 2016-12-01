@@ -2,7 +2,7 @@ namespace NerdGolfTracker.Operationen
 {
     public class Lochwechsel : Operation
     {
-        private Operation _folgeOperation;
+        private readonly Operation _folgeOperation;
 
         public Lochwechsel(Operation folgeOperation)
         {
