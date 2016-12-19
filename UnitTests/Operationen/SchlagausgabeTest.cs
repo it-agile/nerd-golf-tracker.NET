@@ -1,18 +1,18 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using NUnit.Framework;
 using NerdGolfTracker;
 using NerdGolfTracker.Operationen;
 
 namespace UnitTests.Operationen
 {
-    [TestFixture]
+    [TestClass]
     public class SchlagausgabeTest
     {
         private Mock<Scorecard> _scorecardStub;
         private Schlagausgabe _schlagausgabe;
         private Mock<Operation> _folgeOperationMock;
             
-        [SetUp]
+        [TestInitialize]
         public void Init()
         {
             _scorecardStub = new Mock<Scorecard>();
@@ -21,14 +21,14 @@ namespace UnitTests.Operationen
 
         }
 
-        [Test]
+        [TestMethod]
         public void GibtSchlagzahlenAus()
         {
             _scorecardStub.Setup(scorecard => scorecard.AnzahlSchlaege).Returns(1);
-            Assert.That(_schlagausgabe.FuehreAus(_scorecardStub.Object), Does.Contain("1 Schlag"));
+            Assert.IsTrue(_schlagausgabe.FuehreAus(_scorecardStub.Object).Contains("1 Schlag"));
         }
 
-        [Test]
+        [TestMethod]
         public void FuehrtFolgeOperationAus()
         {
             _schlagausgabe.FuehreAus(_scorecardStub.Object);
