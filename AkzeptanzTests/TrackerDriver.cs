@@ -1,4 +1,7 @@
+using System;
 using System.Diagnostics;
+using System.IO;
+using System.Reflection;
 using NUnit.Framework;
 
 namespace AkzeptanzTests
@@ -10,9 +13,13 @@ namespace AkzeptanzTests
 
         public void Starte()
         {
+            var assemble = Assembly.GetExecutingAssembly();
+            var path = new DirectoryInfo(Path.GetDirectoryName(assemble.Location));
+            Console.WriteLine(path);
+
             _tracker = Process.Start(new ProcessStartInfo
                                          {
-                                             FileName = "NerdGolfTracker.exe",
+                                             FileName = path + "\\NerdGolfTracker.exe",
                                              UseShellExecute = false,
                                              RedirectStandardOutput = true,
                                              RedirectStandardInput = true,
