@@ -19,7 +19,7 @@ namespace UnitTests
         public void InkrementiertSchlagzahlEinmal()
         {
             _scorecard.ErhoeheAnzahlSchlaege();
-            Assert.AreEqual(_scorecard.AnzahlSchlaege, 2);
+            Assert.AreEqual(_scorecard.AnzahlSchlaege, 1);
         }
 
         [TestMethod]
