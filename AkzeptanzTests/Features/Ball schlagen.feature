@@ -2,7 +2,7 @@ Funktionalität: Ball schlagen
 
 Szenario: Schlaege zaehlen
 	Wenn ich den Ball einmal schlage,	 
-	Dann zählt der NerdGolfTracker 1 Schlag.
+	Dann zählt der NerdGolfTracker 2 Schlag.
 	
 	Wenn ich den Ball noch einmal schlage,
 	Dann zählt er 2 Schlaege.
