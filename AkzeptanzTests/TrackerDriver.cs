@@ -1,8 +1,8 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
-using NUnit.Framework;
 
 namespace AkzeptanzTests
 {
@@ -19,7 +19,7 @@ namespace AkzeptanzTests
 
             _tracker = Process.Start(new ProcessStartInfo
                                          {
-                                             FileName = path + "\\NerdGolfTracker.exe",
+                                             FileName = "NerdGolfTracker.exe",
                                              UseShellExecute = false,
                                              RedirectStandardOutput = true,
                                              RedirectStandardInput = true,
@@ -48,7 +48,7 @@ namespace AkzeptanzTests
 
         public void AssertThatAntwortContains(string format, params object[] objects)
         {
-            Assert.That(_antwort, Contains.Substring(string.Format(format, objects)));
+            Assert.IsTrue(_antwort.Contains(string.Format(format, objects)));
         }
     }
 }
