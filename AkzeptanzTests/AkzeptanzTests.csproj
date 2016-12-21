@@ -60,9 +60,9 @@
       <DependentUpon>Hilfe.feature</DependentUpon>
     </Compile>
     <Compile Include="Features\Lochwechsel.feature.cs">
-      <DependentUpon>Lochwechsel.feature</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>Lochwechsel.feature</DependentUpon>
     </Compile>
     <Compile Include="Features\Unbekannte Eingabe.feature.cs">
       <AutoGen>True</AutoGen>

@@ -9,7 +9,7 @@ namespace UnitTests
     public class EinfacherInterpreterTest
     {
         [TestMethod]
-        public void DoTest()
+        public void FindetAlleOperationenZubefehlen()
         {
             FindetOperation("Naechstes Loch", typeof(Lochwechsel));
             FindetOperation("Schlage Ball", typeof(Schlag));

@@ -67,6 +67,24 @@ namespace AkzeptanzTests.Features
         {
             testRunner.CollectScenarioErrors();
         }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Unbekannte Eingabe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Unbekannte Eingabe")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute()]
+        public virtual void UnbekannteEingabe()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Unbekannte Eingabe", new string[] {
+                        "ignore"});
+#line 4
+this.ScenarioSetup(scenarioInfo);
+#line 5
+ testRunner.When("ich eine dem NerdGolfTracker unbekannte Eingabe mache,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
+#line 6
+ testRunner.Then("weist mich der Tracker auf die Hilfe hin.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
