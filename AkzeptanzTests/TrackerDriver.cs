@@ -13,10 +13,6 @@ namespace AkzeptanzTests
 
         public void Starte()
         {
-            var assemble = Assembly.GetExecutingAssembly();
-            var path = new DirectoryInfo(Path.GetDirectoryName(assemble.Location));
-            Console.WriteLine(path);
-
             _tracker = Process.Start(new ProcessStartInfo
                                          {
                                              FileName = "NerdGolfTracker.exe",
