@@ -79,7 +79,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 4
  testRunner.When("ich den Ball einmal schlage,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
 #line 5
- testRunner.Then("zählt der NerdGolfTracker 2 Schlag.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
+ testRunner.Then("zählt der NerdGolfTracker 1 Schlag.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
 #line 7
  testRunner.When("ich den Ball noch einmal schlage,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
 #line 8
