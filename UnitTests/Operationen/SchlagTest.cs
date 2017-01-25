@@ -1,18 +1,18 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using NerdGolfTracker;
 using NerdGolfTracker.Operationen;
+using NUnit.Framework;
 
 namespace UnitTests.Operationen
 {
-    [TestClass]
+    [TestFixture]
     public class SchlagTest
     {
         private Mock<Scorecard> _scorecardMock;
         private Mock<Operation> _folgeOperationMock;
         private Schlag _schlag;
 
-        [TestInitialize]
+        [SetUp]
         public void Init()
         {
             _scorecardMock = new Mock<Scorecard>();
@@ -20,14 +20,14 @@ namespace UnitTests.Operationen
             _schlag = new Schlag(_folgeOperationMock.Object);
         }
 
-        [TestMethod]
+        [Test]
         public void ErhoehtDieSchlagzahlAufDerScorecard()
         {
             _schlag.FuehreAus(_scorecardMock.Object);
             _scorecardMock.Verify(scorecard => scorecard.ErhoeheAnzahlSchlaege());
         }
 
-        [TestMethod]
+        [Test]
         public void FuehrtFolgeOperationAus()
         {
             _schlag.FuehreAus(_scorecardMock.Object);

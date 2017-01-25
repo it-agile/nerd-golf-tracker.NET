@@ -1,40 +1,39 @@
 ﻿using NerdGolfTracker;
-using Microsoft.VisualStudio.QualityTools.UnitTestFramework;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace UnitTests
 {
-    [TestClass]
+    [TestFixture]
     public class EinfacheScorecardTest
     {
         private Scorecard _scorecard;
 
-        [TestInitialize]
+        [SetUp]
         public void InitialisiereScorecard()
         {
             _scorecard = new EinfacheScorecard();
         }
 
-        [TestMethod]
+        [Test]
         public void InkrementiertSchlagzahlEinmal()
         {
             _scorecard.ErhoeheAnzahlSchlaege();
-            Assert.AreEqual(_scorecard.AnzahlSchlaege, 1);
+            Assert.That(_scorecard.AnzahlSchlaege, Is.EqualTo(1));
         }
 
-        [TestMethod]
+        [Test]
         public void InkrementiertSchlagzahlMehrmals()
         {
             _scorecard.ErhoeheAnzahlSchlaege();
             _scorecard.ErhoeheAnzahlSchlaege();
-            Assert.AreEqual(_scorecard.AnzahlSchlaege, 2);
+            Assert.That(_scorecard.AnzahlSchlaege, Is.EqualTo(2));
         }
 
-        [TestMethod]
+        [Test]
         public void ErhoehtLochnummerBeiLochwechsel()
         {
             _scorecard.SchliesseLochAb();
-            Assert.AreEqual(_scorecard.Lochnummer, 2);
+            Assert.That(_scorecard.Lochnummer, Is.EqualTo(2));
         }
     }
 }

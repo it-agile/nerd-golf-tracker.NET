@@ -1,8 +1,8 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
+using NUnit.Framework;
 
 namespace AkzeptanzTests
 {
@@ -48,7 +48,7 @@ namespace AkzeptanzTests
 
         public void AssertThatAntwortContains(string format, params object[] objects)
         {
-            Assert.IsTrue(_antwort.Contains(string.Format(format, objects)));
+            Assert.That(_antwort, Contains.Substring(string.Format(format, objects)));
         }
     }
 }

@@ -1,14 +1,14 @@
 ﻿using System;
 using NerdGolfTracker;
 using NerdGolfTracker.Operationen;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace UnitTests
 {
-    [TestClass]
+    [TestFixture]
     public class EinfacherInterpreterTest
     {
-        [TestMethod]
+        [Test]
         public void FindetAlleOperationenZubefehlen()
         {
             FindetOperation("Naechstes Loch", typeof(Lochwechsel));
@@ -19,7 +19,7 @@ namespace UnitTests
         public void FindetOperation(string kommando, Type operationstyp)
         {
             Interpreter interpreter = new EinfacherInterpreter();
-            Assert.IsInstanceOfType(interpreter.OperationFuer(kommando), operationstyp);
+            Assert.That(interpreter.OperationFuer(kommando), Is.InstanceOf(operationstyp));
         }
     }
 }

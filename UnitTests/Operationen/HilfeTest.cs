@@ -1,18 +1,18 @@
 ﻿using System;
 using NerdGolfTracker.Operationen;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace UnitTests.Operationen
 {
-    [TestClass]
+    [TestFixture]
     public class HilfeTest
     {
-        [TestMethod]
+        [Test]
         public void GibtEineZeileProBefehlAus()
         {
             var ausgabe = new Hilfe().FuehreAus(null);
             var zeilen = ausgabe.Split(new string[] { System.Environment.NewLine }, StringSplitOptions.None);
-            Assert.AreEqual(zeilen.Length, 3);
+            Assert.That(zeilen.Length, Is.EqualTo(3));
         }
     }
 }

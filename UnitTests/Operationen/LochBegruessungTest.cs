@@ -1,18 +1,18 @@
 ﻿using Moq;
 using NerdGolfTracker;
 using NerdGolfTracker.Operationen;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace UnitTests.Operationen
 {
-    [TestClass]
+    [TestFixture]
     public class LochBegruessungTest
     {
         private Mock<Operation> _folgeOperationMock;
         private Lochbegruessung _lochbegruessung;
         private Mock<Scorecard> _scorecardMock;
 
-        [TestInitialize]
+        [SetUp]
         public void Init()
         {
             _folgeOperationMock = new Mock<Operation>();
@@ -20,14 +20,14 @@ namespace UnitTests.Operationen
             _lochbegruessung = new Lochbegruessung(_folgeOperationMock.Object);
         }
 
-        [TestMethod]
+        [Test]
         public void GibtBegruessungAus()
         {
-            Assert.IsTrue(_lochbegruessung.FuehreAus(_scorecardMock.Object).StartsWith("Du bist"));
+            Assert.That(_lochbegruessung.FuehreAus(_scorecardMock.Object), Is.StringStarting("Du bist"));
         }
 
 
-        [TestMethod]
+        [Test]
         public void FuehrtFolgeoperationMitAus()
         {
             _lochbegruessung.FuehreAus(_scorecardMock.Object);
