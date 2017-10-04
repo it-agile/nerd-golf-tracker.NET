@@ -12,7 +12,7 @@ namespace AkzeptanzTests.Bindings
             _driver = driver;
         }
 
-        [Then(@"zählt.* (\d+) (Schlag|Schlaege)\.")]
+        [Then(@"zählt.* (\d+) (Schlag|Schlaege)")]
         public void PruefeSchlagzahl(int schlagzahl, string schlagnomen)
         {
             _driver.AssertThatAntwortContains("{0}", schlagzahl);

@@ -18,8 +18,7 @@ namespace AkzeptanzTests.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Lochwechsel")]
+    [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
     public partial class LochwechselFeature
     {
         
@@ -28,27 +27,32 @@ namespace AkzeptanzTests.Features
 #line 1 "Lochwechsel.feature"
 #line hidden
         
-        [NUnit.Framework.TestFixtureSetUpAttribute()]
-        public virtual void FeatureSetup()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
+        public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("de-DE"), "Lochwechsel", "", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        [NUnit.Framework.TestFixtureTearDownAttribute()]
-        public virtual void FeatureTearDown()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute()]
+        public static void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
         
-        [NUnit.Framework.SetUpAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute()]
         public virtual void TestInitialize()
         {
+            if (((TechTalk.SpecFlow.FeatureContext.Current != null) 
+                        && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "Lochwechsel")))
+            {
+                AkzeptanzTests.Features.LochwechselFeature.FeatureSetup(null);
+            }
         }
         
-        [NUnit.Framework.TearDownAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
@@ -64,9 +68,10 @@ namespace AkzeptanzTests.Features
             testRunner.CollectScenarioErrors();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Schlagzahl zuruecksetzen")]
-        [NUnit.Framework.IgnoreAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Schlagzahl zuruecksetzen")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Lochwechsel")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute()]
         public virtual void SchlagzahlZuruecksetzen()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schlagzahl zuruecksetzen", new string[] {
@@ -74,30 +79,31 @@ namespace AkzeptanzTests.Features
 #line 4
 this.ScenarioSetup(scenarioInfo);
 #line 5
- testRunner.Given("ich habe den Ball einmal geschlagen,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Angenommen ");
+ testRunner.Given("ich habe den Ball einmal geschlagen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Angenommen ");
 #line 6
- testRunner.When("ich zum nächsten Loch gehe,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
+ testRunner.When("ich zum nächsten Loch gehe", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
 #line 7
- testRunner.And("nun den Ball schlage,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Und ");
+ testRunner.And("nun den Ball schlage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Und ");
 #line 8
- testRunner.Then("zählt der NerdGolfTracker 1 Schlag.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
+ testRunner.Then("zählt der NerdGolfTracker 1 Schlag", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Loch hochzaehlen")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Loch hochzaehlen")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Lochwechsel")]
         public virtual void LochHochzaehlen()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Loch hochzaehlen", ((string[])(null)));
 #line 10
 this.ScenarioSetup(scenarioInfo);
 #line 11
- testRunner.When("ich zum nächsten Loch gehe,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
+ testRunner.When("ich zum nächsten Loch gehe", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
 #line 12
- testRunner.And("nun den Ball schlage,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Und ");
+ testRunner.And("nun den Ball schlage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Und ");
 #line 13
- testRunner.Then("zählt der NerdGolfTracker die Schläge auf dem 2. Loch.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
+ testRunner.Then("zählt der NerdGolfTracker die Schläge auf dem 2. Loch", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
 #line hidden
             this.ScenarioCleanup();
         }

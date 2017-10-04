@@ -1,19 +1,19 @@
 using Moq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NerdGolfTracker;
 using NerdGolfTracker.Operationen;
-using NUnit.Framework;
 
 namespace UnitTests.Operationen
 {
-    [TestFixture]
+    [TestClass]
     public class LochausgabeTest
     {
-        [Test]
+        [TestMethod]
         public void LiefertTextMitAktuellemLoch()
         {
             var scorecardStub = new Mock<Scorecard>();
             scorecardStub.Setup(scorecard => scorecard.Lochnummer).Returns(2);
-            Assert.That(new Lochausgabe().FuehreAus(scorecardStub.Object), Contains.Substring("auf dem 2.Loch"));
+            Assert.IsTrue(new Lochausgabe().FuehreAus(scorecardStub.Object).Contains("auf dem 2.Loch"));
         }
     }
 }

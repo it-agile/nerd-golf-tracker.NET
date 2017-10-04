@@ -12,8 +12,8 @@ namespace AkzeptanzTests.Bindings
             _driver = driver;
         }
 
-        [Given(@".* Ball.* einmal geschlagen.*")]
-        [When(@".* Ball.* schlage.*")]
+        [Given(@".* Ball.* einmal geschlagen")]
+        [When(@".* Ball.* schlage")]
         public void SchlageBall()
         {
             _driver.EmpfangeAnweisung("Schlage Ball");

@@ -1,13 +1,13 @@
 ﻿using Moq;
 using NerdGolfTracker;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTests
 {
-    [TestFixture]
+    [TestClass]
     public class TrackerTest
     {
-        [Test]
+        [TestMethod]
         public void GibtErgebnisDerAusgeloestenOperationZurueck()
         {
             var interpreterStub = new Mock<Interpreter>();
@@ -17,17 +17,17 @@ namespace UnitTests
             operationStub.Setup(operation => operation.FuehreAus(It.IsAny<Scorecard>()))
                 .Returns("Ausgabe");
             var tracker = new Tracker(interpreterStub.Object, null);
-            Assert.That(tracker.ReagiereAuf("Eingabe"), Is.EqualTo("Ausgabe"));
+            Assert.AreEqual(tracker.ReagiereAuf("Eingabe"), "Ausgabe");
         }
 
-        [Test]
+        [TestMethod]
         public void GibtErgebnisDerStartoperationZurueck()
         {
             var startoperationStub = new Mock<Operation>();
             startoperationStub.Setup(operation => operation.FuehreAus(It.IsAny<Scorecard>()))
                 .Returns("Ausgabe");
             var tracker = new Tracker(null, startoperationStub.Object);
-            Assert.That(tracker.Starte(), Is.EqualTo("Ausgabe"));
+            Assert.AreEqual(tracker.Starte(), "Ausgabe");
         }
     }
 }

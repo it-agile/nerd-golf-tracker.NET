@@ -1,4 +1,5 @@
-﻿using TechTalk.SpecFlow;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TechTalk.SpecFlow;
 
 namespace AkzeptanzTests.Bindings
 {
@@ -12,14 +13,14 @@ namespace AkzeptanzTests.Bindings
             _driver = driver;
         }
 
-        [When(".* zum nächsten Loch.*")]
+        [When(".* zum nächsten Loch gehe")]
         public void GeheZumNaechstenLoch()
         {
             _driver.EmpfangeAnweisung("Naechstes Loch");
         }
 
-        [Then(@"zählt.* auf dem (\d+)\. (.*)\.")]
-        [Then(@"begrüßt.* auf dem (\d+)\. (.*)\.")]
+        [Then(@"zählt.* auf dem (\d+)\. (.*)")]
+        [Then(@"begrüßt.* auf dem (\d+)\. (.*)")]
         public void PruefeLoch(int lochnummer, string lochnomen)
         {
             _driver.AssertThatAntwortContains("{0}.", lochnummer, lochnomen);

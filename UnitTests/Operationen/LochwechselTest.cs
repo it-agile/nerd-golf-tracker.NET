@@ -1,18 +1,18 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using NerdGolfTracker;
 using NerdGolfTracker.Operationen;
-using NUnit.Framework;
 
 namespace UnitTests.Operationen
 {
-    [TestFixture]
+    [TestClass]
     public class LochwechselTest
     {
         private Mock<Scorecard> _scorecardMock;
         private Mock<Operation> _folgeOperationMock;
         private Lochwechsel _lochwechsel;
 
-        [SetUp]
+        [TestInitialize]
         public void Init()
         {
             _scorecardMock = new Mock<Scorecard>();
@@ -20,14 +20,14 @@ namespace UnitTests.Operationen
             _lochwechsel = new Lochwechsel(_folgeOperationMock.Object);
         }
 
-        [Test]
+        [TestMethod]
         public void SchliesstLochAb()
         {
             _lochwechsel.FuehreAus(_scorecardMock.Object);
             _scorecardMock.Verify(scorecard => scorecard.SchliesseLochAb());
         }
 
-        [Test]
+        [TestMethod]
         public void FuehrtFolgeOperationMitAus()
         {
             _lochwechsel.FuehreAus(_scorecardMock.Object);

@@ -1,12 +1,12 @@
 ﻿Funktionalität: Hilfe
 
 Szenario: Allgemeine Hilfe
-	Wenn ich die Hilfe aufrufe,
-	Dann zeigt der NerdGolfTracker seine Benutzung an.
+	Wenn ich die Hilfe aufrufe
+	Dann zeigt der NerdGolfTracker seine Benutzung an
 
 Szenariogrundriss: Hilfe zu Kommandos
-	Wenn ich die Hilfe aufrufe,
-	Dann erklärt der NerdGolfTracker das Kommando "<kommando>".
+	Wenn ich die Hilfe aufrufe
+	Dann erklärt der NerdGolfTracker das Kommando "<kommando>"
 
 	Beispiele: 
 	| kommando       |

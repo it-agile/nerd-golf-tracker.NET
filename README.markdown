@@ -1,9 +1,5 @@
 Quotes Language: german
 
-# Verwendete Technik
-
-  * *UnitTests:* MSTest (für eine Version mit NUnit siehe Branch _NUnit_)
-  * *Akzeptanztests:* Specflow
 
 # Fallstricke
 
