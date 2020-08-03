@@ -1,5 +1,4 @@
 ﻿using NerdGolfTracker;
-using Microsoft.VisualStudio.QualityTools.UnitTestFramework;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTests

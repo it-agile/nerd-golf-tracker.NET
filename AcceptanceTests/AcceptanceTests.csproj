@@ -83,7 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NerdGolfTracker\NerdGolfTracker.csproj">
-      <Project>{a0b8522a-44bd-481b-9a95-155adb2751b2}</Project>
+      <Project>{d98d80b5-9fe2-4a82-a0de-709e77d1d6c1}</Project>
       <Name>NerdGolfTracker</Name>
     </ProjectReference>
   </ItemGroup>
