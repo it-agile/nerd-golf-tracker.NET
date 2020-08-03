@@ -1,19 +1,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1209
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdGolfTracker", "NerdGolfTracker\NerdGolfTracker.csproj", "{A0B8522A-44BD-481B-9A95-155ADB2751B2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{F9EFCC2E-B02F-4114-973D-E5E0FE227D70}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9119BFB-9460-4E05-AEAE-B6E55835C0AF}"
-	ProjectSection(SolutionItems) = preProject
-		Local.testsettings = Local.testsettings
-		NerdGolfTracker.vsmdi = NerdGolfTracker.vsmdi
-		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkzeptanzTests", "AkzeptanzTests\AkzeptanzTests.csproj", "{13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcceptanceTests", "AcceptanceTests\AcceptanceTests.csproj", "{1AC172BD-828F-46CD-BD2E-10F9F77146C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,20 +39,24 @@ Global
 		{F9EFCC2E-B02F-4114-973D-E5E0FE227D70}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{F9EFCC2E-B02F-4114-973D-E5E0FE227D70}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{F9EFCC2E-B02F-4114-973D-E5E0FE227D70}.Release|x86.ActiveCfg = Release|Any CPU
-		{13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E}.Debug|x86.Build.0 = Debug|Any CPU
-		{13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{13BAC2EF-B832-48BF-B1E0-EBE6DBDD527E}.Release|x86.ActiveCfg = Release|Any CPU
+		{1AC172BD-828F-46CD-BD2E-10F9F77146C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC172BD-828F-46CD-BD2E-10F9F77146C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC172BD-828F-46CD-BD2E-10F9F77146C3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1AC172BD-828F-46CD-BD2E-10F9F77146C3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1AC172BD-828F-46CD-BD2E-10F9F77146C3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1AC172BD-828F-46CD-BD2E-10F9F77146C3}.Debug|x86.Build.0 = Debug|Any CPU
+		{1AC172BD-828F-46CD-BD2E-10F9F77146C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC172BD-828F-46CD-BD2E-10F9F77146C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC172BD-828F-46CD-BD2E-10F9F77146C3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1AC172BD-828F-46CD-BD2E-10F9F77146C3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1AC172BD-828F-46CD-BD2E-10F9F77146C3}.Release|x86.ActiveCfg = Release|Any CPU
+		{1AC172BD-828F-46CD-BD2E-10F9F77146C3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A869444-6720-4B85-9E7D-A90917D274CE}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = NerdGolfTracker.vsmdi

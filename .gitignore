@@ -10,10 +10,11 @@ NerdGolfTracker.fbl8
 NerdGolfTracker.fbpInf
 
 # Visual Studio
-*.suo
 *DotSettings.user
 */bin
 */obj
+.vs
+
 
 # NUnit-GUI
 *VisualState.xml
