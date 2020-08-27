@@ -1,6 +1,6 @@
 Quotes Language: german
 
 
-# Fallstricke
+Die Build-Pipeline lässt sich hier finden:
 
-Die ausführbare Spezifikation verlässt sich darauf, dass der NerdGolfTracker seine Ausgabe auf einmal tätigt, technisch gesprochen: dass der Output-Stream nur einmal geflusht wird. Würde mehrmals geflusht werden, wäre das Lesen der Ausgabe im `TrackerDriver` unzuverlässig.
+https://dev.azure.com/itagile/Nerd%20Golf%20Tracker/_build?definitionId=2
