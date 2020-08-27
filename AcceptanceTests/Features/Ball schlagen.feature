@@ -8,7 +8,7 @@ Scenario: Schlaege zaehlen
 	Then zaehlt er 2 Schlaege
 
 	When ich den Ball noch einmal schlage
-	Then zaehlt er 3 Schlaege
+	Then zaehlt er 4 Schlaege
 
 Scenario: Loch anzeigen
 	When ich den Ball einmal schlage
